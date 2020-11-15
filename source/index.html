@@ -1,39 +1,78 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Кэт энерджи</title>
-  </head>
-  <body class="page__body">
-    <header class="page-header">
-      <a class="page-header__logo logo">
-        <img src="https://via.placeholder.com/101x18" alt="Логотип магазина Cat Energy">
-      </a>
 
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item--active">
-              <a>
-                Главная
-              </a>
-            </li>
-            <li class="site-list__item">
-              <a href="catalog.html">
-                Каталог продукции
-              </a>
-            </li>
-            <li class="site-list__item">
-              <a href="form.html">
-                Подбор программы
-              </a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </header>
-  </body>
+<head>
+  <meta charset="utf-8">
+  <title>Cat Energy - Главная</title>
+</head>
+
+<body class="page__body">
+  <header class="page-header">
+    <a class="page-header__logo logo">
+      <img src="https://via.placeholder.com/101x18" alt="Логотип сайта Cat Energy" width="101" height="18">
+    </a>
+
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item site-list__item--active">
+            <a>
+              Главная
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="catalog.html">
+              Каталог продукции
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="form.html">
+              Подбор программы
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main class="page-main">
+
+    <section class="promo">
+      <div class="promo__wrapper">
+        <h1 class="promo__title title">Функциональное питание для котов</h1>
+        <p class="promo__slogan">Занялся собой? Займись котом!</p>
+        <a class="promo__button button" href="form.html">Подобрать программу</a>
+        <img class="promo__img" src="https://via.placeholder.com/280x270" alt="Красивая упаковка основного продукта"
+          width="280" height="270">
+      </div>
+    </section>
+
+    <section class="programs">
+      <div class="programs__wrapper">
+        <h2 class="visually-hidden">Программы питания</h2>
+        <ul class="programs__list">
+          <li class="programs__item programs__item--slimming">
+            <h3 class="advantages__title">Похудение</h3>
+            <p class="advantages__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям?
+               Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.
+              </p>
+              <a class="programs__link" href="catalog/slimming.html">Подобрать программу</a>
+          </li>
+          <li class="programs__item programs__item--weight-gain">
+            <h3 class="advantages__title">Набор массы</h3>
+            <p class="advantages__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro
+              поможет вашему коту нарастить необходимые мышцы!
+            </p>
+            <a class="programs__link" href="catalog/weight-gain.html">Подобрать программу</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+</body>
+
 </html>
