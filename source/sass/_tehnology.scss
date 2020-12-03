@@ -1,0 +1,16 @@
+.tehnology {
+  outline: 5px solid rgba(255, 38, 0, 0.8);
+  outline-offset: -5px;
+  border: 1px solid green;
+}
+
+.tehnology__list {
+  margin: 38px 0 0 42px;
+}
+
+.tehnology__item {
+  font-family: $font-arial;
+  padding-left: 80px;
+  color: $color-dark-gray;
+  margin-bottom: 20px;
+}

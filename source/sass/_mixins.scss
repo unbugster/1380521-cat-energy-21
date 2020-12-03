@@ -1,0 +1,4 @@
+@mixin font($size: 36px, $l-height: 40px) {
+  font-size: $size;
+  line-height: $l-height;
+}

@@ -1,0 +1,10 @@
+.copyright {
+  outline: 5px solid rgba(245, 209, 7, 0.8);
+  outline-offset: -8px;
+  display: flex;
+}
+
+.copyright__text {
+  @include font(16px, 18px);
+  font-family: $font-arial;
+}

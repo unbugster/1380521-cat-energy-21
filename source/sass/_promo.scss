@@ -1,0 +1,31 @@
+.promo {
+  background: linear-gradient(to bottom, rgba($color-green, 0.85%) 63%, rgba($color-green, 0.85%) 63%, $color-white 37%, $color-white 37%),
+    url("https://via.placeholder.com/563x302");
+  background-repeat: no-repeat;
+  color: $color-white;
+  outline: 5px solid rgba(0, 68, 255, 0.8);
+  outline-offset: -5px;
+  margin-bottom: 22px;
+}
+
+.promo__img {
+  display: block;
+  margin: 0 auto;
+}
+
+.promo__title {
+  @include font(36px, 36px);
+  margin: 0;
+  text-align: center;
+  padding: 27px 15px 25px 16px;
+}
+
+.promo__slogan {
+  @include font(14px, 14px);
+  margin: 0 0 29px 0;
+  text-align: center;
+}
+
+.promo__button button {
+  margin-top: 3px;
+}

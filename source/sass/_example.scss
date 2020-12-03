@@ -1,0 +1,37 @@
+.example {
+  background-color: $color-gray;
+  outline: 5px solid rgba(0, 255, 221, 0.8);
+  outline-offset: -5px;
+}
+
+.example-item__value {
+  @include font(24px, 24px);
+}
+
+.example-item__parameter {
+  @include font(12px, 12px);
+  font-family: $font-arial;
+  color: $color-dark-gray;
+}
+
+.example__cost {
+  @include font(14px, 20px);
+  text-align: center;
+}
+
+.example__description {
+  font-family: $font-arial;
+  color: $color-dark-gray;
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+.example__title {
+  margin: 0;
+  padding: 27px 85px 33px 0;
+}
+
+.example__list {
+  display: flex;
+  justify-content: space-between;
+}
