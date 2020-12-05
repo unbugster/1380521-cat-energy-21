@@ -19,6 +19,8 @@
   height: 22px;
   padding: 20px 77px 21px 23px;
   border-bottom: 1px solid $color-special-gray;
+
+  @include clear-list;
 }
 
 .page-footer__copyright {

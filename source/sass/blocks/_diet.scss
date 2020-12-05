@@ -22,4 +22,6 @@
 .diet__title {
   margin: 0;
   padding: 30px 79px 29px 91px;
+
+  @include font(24px, 37px);
 }

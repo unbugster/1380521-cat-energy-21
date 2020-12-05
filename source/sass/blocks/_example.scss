@@ -4,14 +4,11 @@
   outline-offset: -5px;
 }
 
-.example-item__value {
-  @include font(24px, 24px);
-}
+.example__list {
+  display: flex;
+  justify-content: space-between;
 
-.example-item__parameter {
-  @include font(12px, 12px);
-  font-family: $font-arial;
-  color: $color-dark-gray;
+  @include clear-list;
 }
 
 .example__cost {
@@ -29,9 +26,4 @@
 .example__title {
   margin: 0;
   padding: 27px 85px 33px 0;
-}
-
-.example__list {
-  display: flex;
-  justify-content: space-between;
 }

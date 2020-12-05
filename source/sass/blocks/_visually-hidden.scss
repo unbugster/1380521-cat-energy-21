@@ -1,8 +1,3 @@
-img {
-  max-width: 100%;
-  height: auto;
-}
-
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -14,14 +9,4 @@ img {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-}
-
-.clear-list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.title {
-  @include font(36px, 40px);
 }

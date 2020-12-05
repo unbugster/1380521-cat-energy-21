@@ -4,8 +4,8 @@
   margin-bottom: 27px;
 }
 
-.diet__title {
-  @include font(24px, 37px);
+.programs__list {
+  @include clear-list;
 }
 
 .programs__item {

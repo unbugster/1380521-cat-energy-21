@@ -6,6 +6,8 @@
 
 .tehnology__list {
   margin: 38px 0 0 42px;
+
+  @include clear-list;
 }
 
 .tehnology__item {
