@@ -9,6 +9,7 @@
   display: block;
   padding: 15px 127px 18px 19px;
   margin-bottom: 18px;
+  text-transform: uppercase;
 }
 
 .diet__description {
@@ -22,6 +23,7 @@
 .diet__title {
   margin: 0;
   padding: 30px 79px 29px 91px;
+  text-transform: uppercase;
 
   @include font(24px, 37px);
 }

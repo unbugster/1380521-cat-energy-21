@@ -5,6 +5,7 @@
 
 .contacts__text {
   @include font(16px, 18px);
+  text-transform: uppercase;
 }
 
 .contacts__address {

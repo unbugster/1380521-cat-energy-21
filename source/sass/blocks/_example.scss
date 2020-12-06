@@ -14,6 +14,7 @@
 .example__cost {
   @include font(14px, 20px);
   text-align: center;
+  text-transform: uppercase;
 }
 
 .example__description {
