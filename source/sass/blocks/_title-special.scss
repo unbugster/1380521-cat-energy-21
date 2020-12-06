@@ -1,3 +1,5 @@
 .title-special {
   color: inherit;
+
+  @include font(24px, 26px);
 }
