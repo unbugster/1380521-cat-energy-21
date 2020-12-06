@@ -1,0 +1,16 @@
+.slider__list {
+  margin-bottom: 23px;
+
+  @include clear-list;
+}
+
+.slider__item {
+  &--after {
+    display: none;
+  }
+
+  img {
+    display: block;
+    margin: 0 auto;
+  }
+}

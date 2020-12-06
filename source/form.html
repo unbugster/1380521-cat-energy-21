@@ -4,12 +4,13 @@
 <head>
   <meta charset="utf-8">
   <title>Cat Energy - Форма</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page__body">
 
   <header class="page-header">
-    <div class="page-header__wrapper">
+    <div class="page-header__wrapper wrapper">
 
       <a class="page-header__logo logo">
         <img src="https://via.placeholder.com/101x18" alt="Логотип сайта Cat Energy" width="101" height="18">
@@ -40,13 +41,13 @@
   </header>
 
   <main class="page-main">
-    <h1 class="page-main__title">Подбор программы</h1>
-
-    <p class="page-main__text">
-      Заполните анкету, и мы подберем программу питания для вашего кота
-    </p>
-
-    <form class="page-main__order order" action="https://echo.htmlacademy.ru" method="post">
+    <div class="wrapper">
+      <h1 class="page-main__title">Подбор программы</h1>
+      <p class="page-main__text">
+        Заполните анкету, и мы подберем программу питания для вашего кота
+      </p>
+    </div>
+    <form class="page-main__order order wrapper" action="https://echo.htmlacademy.ru" method="post">
 
       <fieldset class="order__catdata">
         <legend class="visually-hidden">Данные кота</legend>
@@ -172,7 +173,7 @@
     <section class="contacts">
       <h2 class="visually-hidden">Контактные данные</h2>
 
-      <div class="contacts__information">
+      <div class="contacts__information wrapper">
         <b class="contacts__text">Приглашаем к сотрудничеству дилеров!</b>
         <address class="contacts__address">
           ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
@@ -189,7 +190,7 @@
 
 
   <footer class="page-footer">
-    <div class="page-footer__wrapper">
+    <div class="page-footer__wrapper wrapper">
       <h2 class="visually-hidden">Дополнительные контактные данные</h2>
 
       <a class="page-footer__logo logo">

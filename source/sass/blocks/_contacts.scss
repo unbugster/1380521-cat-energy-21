@@ -1,0 +1,25 @@
+.contacts {
+  outline: 5px solid rgba(183, 0, 255, 0.8);
+  outline-offset: -5px;
+  background-color: $color-light-gray;
+}
+
+.contacts__text {
+  @include font(16px, 18px);
+  text-transform: uppercase;
+}
+
+.contacts__address {
+  @include font(14px, 20px);
+  font-family: $font-arial;
+}
+
+.contacts__information {
+  display: flex;
+  justify-content: space-between;
+  padding: 28px 0 22px 0;
+}
+
+.contacts__map-iframe {
+  width: 100%;
+}

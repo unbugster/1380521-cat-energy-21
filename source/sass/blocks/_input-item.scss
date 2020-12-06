@@ -1,0 +1,18 @@
+.input-item {
+  display: flex;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  color: $color-dark-gray;
+
+  @include font(16px, 18px);
+}
+
+.input-item__text {
+  flex-shrink: 0;
+  margin-right: 14px;
+}
+
+.input-item__input {
+  width: 100%;
+  text-transform: uppercase;
+}

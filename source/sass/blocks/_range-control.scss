@@ -1,0 +1,10 @@
+.range-control__button {
+  @include font(24px, 24px);
+}
+
+.range-control__buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+}

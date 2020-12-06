@@ -1,0 +1,29 @@
+.diet {
+  background-color: $color-light-gray;
+  outline: 5px solid rgba(40, 109, 40, 0.8);
+  outline-offset: -5px;
+}
+
+.diet__link {
+  @include font(16px, 16px);
+  display: block;
+  padding: 15px 127px 18px 19px;
+  margin-bottom: 18px;
+  text-transform: uppercase;
+}
+
+.diet__description {
+  font-family: $font-arial;
+  padding: 0 33px 23px 20px;
+  border-bottom: 1px solid $color-special-gray;
+  color: $color-dark-gray;
+  width: 81%;
+}
+
+.diet__title {
+  margin: 0;
+  padding: 30px 79px 29px 91px;
+  text-transform: uppercase;
+
+  @include font(24px, 37px);
+}

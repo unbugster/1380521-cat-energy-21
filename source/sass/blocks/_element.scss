@@ -1,0 +1,10 @@
+.element__value {
+  @include font(24px, 24px);
+  text-transform: uppercase;
+}
+
+.element__parameter {
+  @include font(12px, 12px);
+  font-family: $font-arial;
+  color: $color-dark-gray;
+}

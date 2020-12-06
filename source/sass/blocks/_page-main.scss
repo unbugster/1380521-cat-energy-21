@@ -1,0 +1,14 @@
+.page-main {
+  border: 1px solid red;
+}
+
+.page-main__title {
+  padding: 27px 21px 37px 0;
+
+  @include font(36px, 36px);
+}
+
+.page-main__text {
+  padding: 0 50px 39px 0;
+  text-transform: uppercase;
+}

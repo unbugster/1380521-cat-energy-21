@@ -1,0 +1,30 @@
+.example {
+  background-color: $color-gray;
+  outline: 5px solid rgba(0, 255, 221, 0.8);
+  outline-offset: -5px;
+}
+
+.example__list {
+  display: flex;
+  justify-content: space-between;
+
+  @include clear-list;
+}
+
+.example__cost {
+  @include font(14px, 20px);
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.example__description {
+  font-family: $font-arial;
+  color: $color-dark-gray;
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+.example__title {
+  margin: 0;
+  padding: 27px 85px 33px 0;
+}
