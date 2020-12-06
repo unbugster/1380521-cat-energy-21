@@ -8,3 +8,8 @@
   margin: 0;
   padding: 0;
 }
+
+@mixin fieldset-border {
+  border: none;
+  border-bottom: 1px solid $color-special-gray;
+}

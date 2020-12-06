@@ -1,0 +1,13 @@
+.input-item {
+  display: flex;
+  margin-bottom: 12px;
+}
+
+.input-item__text {
+  flex-shrink: 0;
+  margin-right: 14px;
+}
+
+.input-item__input {
+  width: 100%;
+}
