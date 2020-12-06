@@ -1,0 +1,19 @@
+.good-others__link-title {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $color-black-special;
+  text-align: center;
+}
+
+.good-others__title {
+  margin: 0 0 8px 0;
+  padding-top: 78px;
+
+  @include font(16px, 20px);
+}
+
+.good-others__text {
+  color: $color-dark-gray;
+  text-align: center;
+  margin: 0 0 21px 0;
+}

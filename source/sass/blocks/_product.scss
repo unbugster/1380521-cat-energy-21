@@ -1,0 +1,29 @@
+.product {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 19px;
+}
+
+.product__title {
+  text-transform: uppercase;
+  margin-bottom: 13px;
+  color: $color-dark-gray2;
+
+  @include font(16px, 16px);
+}
+
+.product__info {
+  width: 100%;
+  margin-bottom: 15px;
+  color: $color-dark-gray;
+
+  @include font(14px, 14px);
+}
+
+.product-info__column1 {
+  text-align: left;
+}
+
+.product-info__column2 {
+  text-align: right;
+}

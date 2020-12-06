@@ -1,0 +1,48 @@
+.good {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 19px;
+}
+
+.good__link-img {
+  flex-basis: 50%;
+}
+
+.good__link-title {
+  text-decoration: none;
+  display: block;
+}
+
+.good__title {
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0 38px 18px 0;
+  color: $color-dark-gray2;
+
+  @include font(16px, 20px);
+}
+
+.good__container {
+  flex-basis: 50%;
+  margin-bottom: 13px;
+}
+
+.good__info {
+  width: 100%;
+  color: $color-dark-gray;
+  border-spacing: 0;
+
+  @include font(12px, 16px);
+}
+
+.good-info__column1 {
+  text-align: left;
+}
+
+.good-info__column2 {
+  text-align: right;
+}
+
+.good__button {
+  margin-bottom: 18px;
+}

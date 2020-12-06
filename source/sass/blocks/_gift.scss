@@ -1,0 +1,15 @@
+.gift {
+  height: 289px;
+  background-image: url("https://via.placeholder.com/280x289");
+  background-repeat: no-repeat;
+  margin-bottom: 21px;
+}
+
+.gift__text {
+  width: 161px;
+  text-align: center;
+  margin: 0 auto;
+  color: $color-white;
+
+  @include font(16px, 20px);
+}
