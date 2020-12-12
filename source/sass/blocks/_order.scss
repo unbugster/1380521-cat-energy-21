@@ -1,18 +1,16 @@
 .order__catdata {
+  @include fieldset-border;
   margin: 0;
   padding: 0;
-
-  @include fieldset-border;
 }
 
 .order__goal {
   @include fieldset-border;
+  @include font(16px, 18px);
   padding-top: 22px;
   color: $color-dark-gray2;
 
-  @include font(16px, 18px);
-
-  :last-child {
+  &:last-child {
     margin-bottom: 19px;
   }
 }
@@ -31,7 +29,7 @@
   margin: 0;
   padding: 0;
 
-  :last-child {
+  &:last-child {
     margin-bottom: 0;
   }
 }

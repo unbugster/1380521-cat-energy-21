@@ -1,7 +1,5 @@
 .diet {
   background-color: $color-light-gray;
-  outline: 5px solid rgba(40, 109, 40, 0.8);
-  outline-offset: -5px;
 }
 
 .diet__link {
@@ -21,9 +19,8 @@
 }
 
 .diet__title {
+  @include font(24px, 37px);
   margin: 0;
   padding: 30px 79px 29px 91px;
   text-transform: uppercase;
-
-  @include font(24px, 37px);
 }

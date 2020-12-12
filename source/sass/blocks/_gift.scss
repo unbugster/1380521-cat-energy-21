@@ -6,10 +6,9 @@
 }
 
 .gift__text {
+  @include font(16px, 20px);
   width: 161px;
   text-align: center;
   margin: 0 auto;
   color: $color-white;
-
-  @include font(16px, 20px);
 }

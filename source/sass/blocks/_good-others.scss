@@ -6,10 +6,9 @@
 }
 
 .good-others__title {
+  @include font(16px, 20px);
   margin: 0 0 8px 0;
   padding-top: 78px;
-
-  @include font(16px, 20px);
 }
 
 .good-others__text {
