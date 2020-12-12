@@ -1,7 +1,18 @@
 .page-header__wrapper {
-  display: flex;
+  color: inherit;
 }
 
-.page-header__logo {
-  padding: 24px 0;
+.page-header__mobile-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 33.32px;
+    height: 37.61px;
+    background-image: url("../img/icon-logo-mobile.svg");
+    background-repeat: no-repeat;
+  }
 }
