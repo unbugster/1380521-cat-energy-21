@@ -1,14 +1,11 @@
 .example {
   background-color: $color-gray;
-  outline: 5px solid rgba(0, 255, 221, 0.8);
-  outline-offset: -5px;
 }
 
 .example__list {
+  @include clear-list;
   display: flex;
   justify-content: space-between;
-
-  @include clear-list;
 }
 
 .example__cost {

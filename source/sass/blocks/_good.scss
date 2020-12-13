@@ -1,0 +1,38 @@
+.good {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 19px;
+}
+
+.good__link-img {
+  flex-basis: 50%;
+}
+
+.good__link-title {
+  text-decoration: none;
+  display: block;
+}
+
+.good__title {
+  @include font(16px, 20px);
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0 38px 18px 0;
+  color: $color-dark-gray2;
+}
+
+.good__container {
+  flex-basis: 50%;
+  margin-bottom: 13px;
+}
+
+.good__info {
+  @include font(12px, 16px);
+  width: 100%;
+  color: $color-dark-gray;
+  border-spacing: 0;
+}
+
+.good__button {
+  margin-bottom: 18px;
+}

@@ -2,7 +2,7 @@
 @import "abstracts/fonts";
 @import "abstracts/variables.scss";
 @import "abstracts/mixins.scss";
-@import "blocks/wrappers.scss";
+@import "blocks/wrapper.scss";
 @import "abstracts/global.scss";
 @import "blocks/buttons.scss";
 @import "blocks/visually-hidden.scss";
@@ -22,6 +22,7 @@
 @import "blocks/range-control.scss";
 @import "blocks/slider.scss";
 @import "blocks/social.scss";
+@import "blocks/site-list";
 @import "blocks/tehnology.scss";
 @import "blocks/page.scss";
 @import "blocks/order.scss";
@@ -29,3 +30,10 @@
 @import "blocks/choice.scss";
 @import "blocks/title-special.scss";
 @import "blocks/comment.scss";
+@import "blocks/catalog.scss";
+@import "blocks/good.scss";
+@import "blocks/good-others.scss";
+@import "blocks/adding.scss";
+@import "blocks/product.scss";
+@import "blocks/product-info.scss";
+@import "blocks/gift.scss";

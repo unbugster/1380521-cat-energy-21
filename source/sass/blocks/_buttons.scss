@@ -1,3 +1,19 @@
 .button {
+  @include font(16px, 20px);
   text-transform: uppercase;
+  display: block;
+  text-align: center;
+  width: 100%;
+  text-decoration: none;
+  color: $color-white;
+  background-color: $color-green;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+
+  &--gray {
+    padding: 20px 0 20px 0;
+    background-color: $color-light-gray;
+    color: $color-dark-gray;
+  }
 }

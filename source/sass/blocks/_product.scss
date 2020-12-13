@@ -1,0 +1,19 @@
+.product {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 19px;
+}
+
+.product__title {
+  @include font(16px, 16px);
+  text-transform: uppercase;
+  margin-bottom: 13px;
+  color: $color-dark-gray2;
+}
+
+.product__info {
+  @include font(14px, 14px);
+  width: 100%;
+  margin-bottom: 15px;
+  color: $color-dark-gray;
+}

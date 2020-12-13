@@ -3,9 +3,8 @@
 }
 
 .comment__textarea {
+  @include font(16px, 18px);
   width: 100%;
   color: $color-dark-gray;
   text-transform: uppercase;
-
-  @include font(16px, 18px);
 }
