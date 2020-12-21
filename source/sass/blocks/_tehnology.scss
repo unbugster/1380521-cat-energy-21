@@ -1,11 +1,77 @@
 .tehnology__list {
   @include clear-list;
-  margin: 38px 0 0 42px;
+
+  @media (min-width: $breakpoint-medium) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: $breakpoint-large) {
+    justify-content: space-between;
+  }
 }
 
 .tehnology__item {
   font-family: $font-arial;
-  padding-left: 80px;
   color: $color-dark-gray;
   margin-bottom: 20px;
+  position: relative;
+  display: flex;
+
+  @media (min-width: $breakpoint-medium) {
+    @include font(16px, 24px);
+    padding-top: 40px;
+    width: 250px;
+    display: block;
+
+    &:not(:nth-child(2n)) {
+      margin-right: 133px;
+    }
+  }
+
+  @media (min-width: $breakpoint-large) {
+    &:not(:nth-child(2n)) {
+      margin-right: 0;
+    }
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 60px;
+    background-color: $color-green;
+    background-repeat: no-repeat;
+    background-position: center;
+    flex-shrink: 0;
+    margin-right: 20px;
+
+    @media (min-width: $breakpoint-medium) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &--profit {
+    &::before {
+      background-image: url("../img/icon-leaf-profit.svg");
+    }
+  }
+
+  &--simple {
+    &::before {
+      background-image: url("../img/icon-tub-simple.svg");
+    }
+  }
+
+  &--replace {
+    &::before {
+      background-image: url("../img/icon-eat-replace.svg");
+    }
+  }
+
+  &--result {
+    &::before {
+      background-image: url("../img/icon-alarm-result.svg");
+    }
+  }
 }

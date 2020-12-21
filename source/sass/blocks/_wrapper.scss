@@ -1,4 +1,13 @@
 .wrapper {
   margin: 0 auto;
-  min-width: 280px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media (min-width: $breakpoint-medium) {
+    width: 708px;
+  }
+
+  @media (min-width: $breakpoint-large) {
+    width: 1220px;
+  }
 }

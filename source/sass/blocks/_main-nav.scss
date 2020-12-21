@@ -1,3 +1,22 @@
 .main-nav__list {
   @include clear-list;
+
+  @media (min-width: $breakpoint-medium) {
+    display: flex;
+  }
+}
+
+.main-nav {
+  @media (min-width: $breakpoint-medium) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.main-nav__logo {
+  display: none;
+
+  @media (min-width: $breakpoint-medium) {
+    display: flex;
+  }
 }

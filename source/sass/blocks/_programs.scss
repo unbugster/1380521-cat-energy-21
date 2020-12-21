@@ -4,8 +4,26 @@
 
 .programs__list {
   @include clear-list;
+
+  @media (min-width: $breakpoint-large) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .programs__item {
   margin-bottom: 20px;
+
+  @media (min-width: $breakpoint-medium) {
+    position: relative;
+    padding-top: 77px;
+    padding-right: 278px;
+    padding-left: 52px;
+    padding-bottom: 57px;
+  }
+
+  @media (min-width: $breakpoint-large) {
+    width: 570px;
+    padding-right: 20px;
+  }
 }

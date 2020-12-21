@@ -1,17 +1,60 @@
 .example {
   background-color: $color-gray;
+
+  @media (min-width: $breakpoint-large) {
+    background: linear-gradient(to top, $color-light-gray, $color-light-gray 462px, #ffffff 195px);
+  }
 }
 
 .example__list {
   @include clear-list;
   display: flex;
   justify-content: space-between;
+
+  @media (min-width: $breakpoint-large) {
+    justify-content: flex-start;
+    margin-bottom: 55px;
+  }
 }
+
+.example__item {
+  @media (min-width: $breakpoint-large) {
+    margin-right: 41px;
+  }
+}
+
 
 .example__cost {
   @include font(14px, 20px);
   text-align: center;
   text-transform: uppercase;
+
+  @media (min-width: $breakpoint-medium) {
+    @include font(20px, 20px);
+    width: 188px;
+    text-align: right;
+    margin: 0;
+  }
+
+  @media (min-width: $breakpoint-large) {
+    text-align: left;
+    width: 100%;
+
+    span {
+      padding-left: 40px;
+    }
+  }
+}
+
+.example__block {
+  @media (min-width: $breakpoint-medium) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $breakpoint-large) {
+    display: block;
+  }
 }
 
 .example__description {
@@ -19,9 +62,27 @@
   color: $color-dark-gray;
   width: 100%;
   margin-bottom: 25px;
+
+  @media (min-width: $breakpoint-medium) {
+    @include font(16px, 24px);
+  }
 }
 
 .example__title {
   margin: 0;
   padding: 27px 85px 33px 0;
+}
+
+.example__wrapper {
+  @media (min-width: $breakpoint-large) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.example__content {
+  @media (min-width: $breakpoint-large) {
+    width: 570px;
+    padding-bottom: 65px;
+  }
 }
