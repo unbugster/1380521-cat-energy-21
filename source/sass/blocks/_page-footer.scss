@@ -2,11 +2,10 @@
   background-color: $color-light-gray;
 }
 
-
 .page-footer__logo {
   padding-top: 39px;
   padding-bottom: 32px;
-  border-bottom: 1px solid #d9d9d9;
+  border-bottom: 1px solid $color-special-gray;
   display: block;
 
   @media (min-width: $breakpoint-medium) {
