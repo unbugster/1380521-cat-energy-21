@@ -49,12 +49,16 @@
   }
 }
 
+.contacts__map {
+  line-height: 0;
+}
+
 .contacts__map-iframe {
   width: 100%;
   border: none;
 }
 
-.contacts__wrapper {
+.contacts__container {
   @media (min-width: $breakpoint-large) {
     position: relative;
   }

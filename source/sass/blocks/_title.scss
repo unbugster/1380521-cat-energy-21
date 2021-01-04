@@ -1,4 +1,7 @@
 .title {
+  margin: 0;
+  padding: 0;
+
   @include font(36px, 40px);
   font-weight: 400;
 

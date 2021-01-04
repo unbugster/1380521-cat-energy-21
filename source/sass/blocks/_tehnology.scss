@@ -1,3 +1,12 @@
+.tehnology {
+  padding-bottom: 42px;
+}
+
+.tehnology__title {
+  margin-bottom: 38px;
+}
+
+
 .tehnology__list {
   @include clear-list;
 
@@ -14,9 +23,14 @@
 .tehnology__item {
   font-family: $font-arial;
   color: $color-dark-gray;
-  margin-bottom: 20px;
   position: relative;
   display: flex;
+  padding-right: 5px;
+  align-items: center;
+
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
 
   @media (min-width: $breakpoint-medium) {
     @include font(16px, 24px);

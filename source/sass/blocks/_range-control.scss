@@ -1,5 +1,6 @@
 .range-control__button {
   @include font(16px, 20px);
+  text-transform: uppercase;
   font-family: $font-oswald;
 
   @media (min-width: $breakpoint-medium) {
@@ -10,5 +11,4 @@
 .range-control__buttons {
   display: flex;
   justify-content: space-between;
-  text-transform: uppercase;
 }

@@ -1,5 +1,5 @@
 .promo {
-  background: linear-gradient(to bottom, rgba($color-green, 0.85%) 302px, rgba($color-green, 0.85%) 302px, $color-white 37%, $color-white 37%),
+  background: linear-gradient(to bottom, rgba($color-green, 0.85) 302px, rgba($color-green, 0.85) 302px, $color-white 37%, $color-white 37%),
     url("../img/cat-promo-background.jpg");
   background-repeat: no-repeat;
   background-position: center, top center;
@@ -13,16 +13,17 @@
 
   @media (min-width: $breakpoint-medium) {
     background: none;
-    padding-bottom: 330px;
+    padding-bottom: 455px;
     position: relative;
   }
 
   @media (min-width: $breakpoint-large) {
-    background: linear-gradient(to left, rgba($color-green, 0.85%) 50%, rgba($color-green, 0.85%) 50%, $color-white 50%, $color-white 50%),
-      url("../img/cat-promo-background-desktop.jpg");
-    background-position: center, top right;
+    padding-bottom: 300px;
+    background: url("../img/bg-cat-promo.jpg"),
+      linear-gradient(to left, rgba($color-green-special, 0.85) 50%, rgba($color-green-special, 0.85) 50%, $color-white 50%, $color-white 50%);
+    background-position: top right, center;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: 720px auto, 100% auto;
   }
 }
 
@@ -70,6 +71,7 @@
   margin: 0 0 29px 0;
   text-align: center;
   text-transform: uppercase;
+  padding: 0 15px;
 
   @media (min-width: $breakpoint-medium) {
     @include font(20px, 20px);

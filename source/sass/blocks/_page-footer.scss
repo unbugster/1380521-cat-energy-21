@@ -30,7 +30,6 @@
   justify-content: space-between;
   margin: 0 auto;
   height: 22px;
-  padding: 20px 77px 21px 23px;
   border: 1px solid tomato;
 
   @media (min-width: $breakpoint-medium) {
@@ -54,7 +53,7 @@
   }
 }
 
-.page-footer__wrapper {
+.page-footer__container {
   @media (min-width: $breakpoint-medium) {
     display: flex;
     justify-content: space-between;
@@ -63,4 +62,8 @@
     padding-bottom: 55px;
     align-items: center;
   }
+}
+
+.page-footer__social-wrapper {
+  border-bottom: 1px solid $color-special-gray;
 }
