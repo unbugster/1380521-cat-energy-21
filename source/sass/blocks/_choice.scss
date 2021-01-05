@@ -1,3 +1,63 @@
 .choice {
   text-transform: uppercase;
 }
+
+.choice__text {
+  display: flex;
+  align-items: center;
+  position: relative;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 30px;
+    border: 1px solid $color-silver;
+    border-radius: 50%;
+    margin-right: 15px;
+  }
+}
+
+.choice__input {
+  &:checked {
+    & + .choice__text {
+      &::after {
+        content: "";
+        position: absolute;
+        left: 8.5px;
+        width: 13.5px;
+        height: 13.5px;
+        border: 2px solid $color-green;
+        background-color: $color-green;
+        border-radius: 50%;
+        margin: auto;
+      }
+    }
+  }
+}
+
+.choice--check {
+  .choice__text {
+    &::before {
+      border-radius: 0;
+    }
+  }
+
+  .choice__input {
+    &:checked {
+      & + .choice__text {
+        &::after {
+          content: "";
+          left: 7px;
+          border: none;
+          background-color: inherit;
+          width: 18px;
+          height: 14px;
+          position: absolute;
+          background-image: url("../img/check.svg");
+          background-repeat: no-repeat;
+        }
+      }
+    }
+  }
+}

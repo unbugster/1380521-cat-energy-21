@@ -7,7 +7,8 @@
 .order__goal {
   @include fieldset-border;
   @include font(16px, 18px);
-  padding-top: 22px;
+  margin: 0;
+  padding: 22px 0 0 0;
   color: $color-dark-gray2;
 
   &:last-child {
@@ -46,6 +47,8 @@
 }
 
 .order__more {
+  margin: 0;
+  padding: 0;
   border: none;
 }
 
@@ -54,5 +57,7 @@
 }
 
 .order__required {
-  padding: 21px 61px 32px 61px;
+  text-align: center;
+  margin: 0;
+  padding: 21px 5px 32px 0;
 }

@@ -1,5 +1,5 @@
 .promo {
-  background: linear-gradient(to bottom, rgba($color-green, 0.85) 302px, rgba($color-green, 0.85) 302px, $color-white 37%, $color-white 37%),
+  background: linear-gradient(to bottom, rgba($color-green, 0.85%) 302px, $color-white 37%),
     url("../img/cat-promo-background.jpg");
   background-repeat: no-repeat;
   background-position: center, top center;
@@ -20,7 +20,7 @@
   @media (min-width: $breakpoint-large) {
     padding-bottom: 300px;
     background: url("../img/bg-cat-promo.jpg"),
-      linear-gradient(to left, rgba($color-green-special, 0.85) 50%, rgba($color-green-special, 0.85) 50%, $color-white 50%, $color-white 50%);
+      linear-gradient(to left, rgba($color-green-special, 0.85%) 50%, $color-white 50%);
     background-position: top right, center;
     background-repeat: no-repeat;
     background-size: 720px auto, 100% auto;
