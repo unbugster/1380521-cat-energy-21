@@ -1,27 +1,143 @@
 .example {
   background-color: $color-gray;
+
+  @media (min-width: $breakpoint-medium) {
+    background-color: $color-white;
+  }
+}
+
+.example__container {
+  @media (min-width: $breakpoint-medium) {
+    width: 100%;
+    padding: 0;
+  }
+
+  @media (min-width: $breakpoint-large) {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+      width: 600px;
+      z-index: 1;
+      background-image: linear-gradient(to right, $color-light-gray 50%, $color-gray 50%);
+    }
+  }
+}
+
+.example__wrapper {
+  @media (min-width: $breakpoint-medium) {
+    width: 708px;
+    padding: 0 30px;
+    margin: 0 auto;
+  }
+}
+
+.example__grad {
+  @media (min-width: $breakpoint-medium) {
+    background-image: linear-gradient(to right, $color-light-gray 50%, $color-gray 50%);
+  }
+
+  @media (min-width: $breakpoint-large) {
+    padding-top: 240px;
+    z-index: 2;
+    position: relative;
+  }
+}
+
+.example__bg {
+  @media (min-width: $breakpoint-large) {
+    background-image: linear-gradient(to right, $color-light-gray 71.8%, $color-gray 28.2%);
+  }
 }
 
 .example__list {
   @include clear-list;
   display: flex;
   justify-content: space-between;
+
+  @media (min-width: $breakpoint-large) {
+    justify-content: flex-start;
+    margin-bottom: 55px;
+  }
+}
+
+.example__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 124px;
+
+  @media (min-width: $breakpoint-medium) {
+    margin-right: 42px;
+  }
 }
 
 .example__cost {
   @include font(14px, 20px);
   text-align: center;
   text-transform: uppercase;
+
+  @media (min-width: $breakpoint-medium) {
+    @include font(20px, 20px);
+    width: 188px;
+    text-align: right;
+    margin: 0;
+  }
+
+  @media (min-width: $breakpoint-large) {
+    text-align: left;
+    width: 100%;
+
+    span {
+      padding-left: 40px;
+    }
+  }
+}
+
+.example__block {
+  @media (min-width: $breakpoint-medium) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $breakpoint-large) {
+    display: block;
+  }
 }
 
 .example__description {
+  margin: 0 0 25px 0;
   font-family: $font-arial;
   color: $color-dark-gray;
   width: 100%;
-  margin-bottom: 25px;
+
+  @media (min-width: $breakpoint-medium) {
+    @include font(16px, 24px);
+  }
 }
 
 .example__title {
-  margin: 0;
-  padding: 27px 85px 33px 0;
+  margin: 0 0 33px 0;
+  padding: 27px 5px 0 0;
+
+  @media (min-width: $breakpoint-medium) {
+    margin-bottom: 63px;
+  }
+
+  @media (min-width: $breakpoint-large) {
+    margin-bottom: 76px;
+  }
+}
+
+.example__content {
+  @media (min-width: $breakpoint-large) {
+    width: 570px;
+    padding-bottom: 65px;
+  }
 }

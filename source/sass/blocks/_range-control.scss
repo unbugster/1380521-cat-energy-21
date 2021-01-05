@@ -1,10 +1,14 @@
 .range-control__button {
-  @include font(24px, 24px);
+  @include font(16px, 20px);
+  text-transform: uppercase;
+  font-family: $font-oswald;
+
+  @media (min-width: $breakpoint-medium) {
+    @include font(20px, 30px);
+  }
 }
 
 .range-control__buttons {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 25px;
-  text-transform: uppercase;
 }
