@@ -1,23 +1,68 @@
 .promo {
-  background: linear-gradient(to bottom, rgba($color-green, 0.85%) 302px, rgba($color-green, 0.85%) 302px, $color-white 37%, $color-white 37%),
-    url("../../img/cat-promo-background.jpg");
+  background: linear-gradient(to bottom, rgba($color-green, 0.85%) 302px, $color-white 37%),
+    url("../img/cat-promo-background.jpg");
   background-repeat: no-repeat;
   background-position: center, top center;
   background-size: 100%, contain;
   color: $color-white;
   margin-bottom: 22px;
+
+  @media (min-width: $breakpoint-small) {
+    background-size: 100%, cover;
+  }
+
+  @media (min-width: $breakpoint-medium) {
+    background: none;
+    padding-bottom: 455px;
+    position: relative;
+  }
+
+  @media (min-width: $breakpoint-large) {
+    padding-bottom: 300px;
+    background: url("../img/bg-cat-promo.jpg"),
+      linear-gradient(to left, rgba($color-green-special, 0.85%) 50%, $color-white 50%);
+    background-position: top right, center;
+    background-repeat: no-repeat;
+    background-size: 720px auto, 100% auto;
+  }
 }
 
 .promo__img {
   display: block;
   margin: 0 auto;
+
+  @media (min-width: $breakpoint-medium) {
+    position: absolute;
+    bottom: 10px;
+    z-index: -1;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  @media (min-width: $breakpoint-large) {
+    position: absolute;
+    z-index: 1;
+  }
 }
 
 .promo__title {
   @include font(36px, 36px);
+  font-family: $font-oswald;
+  font-weight: 400;
   margin: 0;
   text-align: center;
   padding: 27px 15px 25px 16px;
+
+  @media (min-width: $breakpoint-medium) {
+    @include font(60px, 60px);
+    color: $color-black;
+    padding: 64px 10px 41px 87px;
+    text-align: left;
+  }
+
+  @media (min-width: $breakpoint-large) {
+    padding-top: 120px;
+  }
 }
 
 .promo__slogan {
@@ -25,8 +70,24 @@
   margin: 0 0 29px 0;
   text-align: center;
   text-transform: uppercase;
+  padding: 0 15px;
+
+  @media (min-width: $breakpoint-medium) {
+    @include font(20px, 20px);
+    color: $color-black;
+    text-align: left;
+    padding: 0 10px 0 88px;
+    margin-bottom: 49px;
+  }
 }
 
 .promo__button {
+  @include font(14px, 18px);
   margin-top: 3px;
+
+  @media (min-width: $breakpoint-medium) {
+    @include font(20px, 20px);
+    width: 244px;
+    margin-left: 82px;
+  }
 }

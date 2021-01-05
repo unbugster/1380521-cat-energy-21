@@ -1,11 +1,18 @@
-.page-header__wrapper {
-  color: inherit;
+.page-header {
+  @media (min-width: $breakpoint-large) {
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+  }
 }
 
 .page-header__mobile-menu {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-top: 12px;
+  padding-bottom: 16.39px;
+  border-bottom: 1px solid $color-whisper;
 
   &::before {
     content: "";
@@ -14,5 +21,9 @@
     height: 37.61px;
     background-image: url("../img/icon-logo-mobile.svg");
     background-repeat: no-repeat;
+  }
+
+  @media (min-width: $breakpoint-medium) {
+    display: none;
   }
 }

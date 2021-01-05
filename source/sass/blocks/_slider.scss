@@ -11,5 +11,12 @@
   img {
     display: block;
     margin: 0 auto;
+
+    @media (min-width: $breakpoint-large) {
+      position: absolute;
+      top: -100px;
+      left: 189px;
+      z-index: 2;
+    }
   }
 }
