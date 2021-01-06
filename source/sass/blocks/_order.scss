@@ -1,15 +1,20 @@
 .order__catdata {
-  @include fieldset-border;
+  border: none;
   margin: 0;
   padding: 0;
 }
 
 .order__goal {
-  @include fieldset-border;
   @include font(16px, 18px);
   margin: 0;
   padding: 22px 0 0 0;
   color: $color-dark-gray2;
+  border: none;
+
+  @media (min-width: $breakpoint-medium) {
+    padding-bottom: 25px;
+    padding-top: 25px;
+  }
 
   &:last-child {
     margin-bottom: 19px;
@@ -23,6 +28,10 @@
 
 .order__owner-title {
   padding: 26px 0 35px 0;
+
+  @media (min-width: $breakpoint-medium) {
+    padding-top: 70px;
+  }
 }
 
 .order__owner {
@@ -32,6 +41,13 @@
 
   &:last-child {
     margin-bottom: 0;
+  }
+}
+
+.order__owner-wrapper {
+  @media (min-width: $breakpoint-large) {
+    display: flex;
+    justify-content: space-between;
   }
 }
 
@@ -56,8 +72,81 @@
   padding: 22px 0 34px 0;
 }
 
+.order__more-wrapper {
+  @media (min-width: $breakpoint-medium) {
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    grid-column-gap: 123px;
+    grid-row-gap: 28px;
+  }
+
+  @media (min-width: $breakpoint-large) {
+    display: flex;
+  }
+}
+
 .order__required {
   text-align: center;
   margin: 0;
   padding: 21px 5px 32px 0;
+}
+
+.order__header-wrapper {
+  border-bottom: 1px solid $color-whisper;
+}
+
+.order__goal-wrapper {
+  border-bottom: 1px solid $color-special-gray;
+
+  @media (min-width: $breakpoint-medium) {
+    border: none;
+  }
+}
+
+.order__goal-container {
+  @media (min-width: $breakpoint-medium) {
+    border: 1px solid $color-platinum;
+    padding-bottom: 25px;
+    padding-top: 25px;
+    padding-left: 27px;
+    padding-right: 20px;
+  }
+}
+
+.order__catdata-wrapper {
+  border-bottom: 1px solid $color-special-gray;
+
+  @media (min-width: $breakpoint-medium) {
+    border: none;
+  }
+}
+
+.order__catdata-container {
+  @media (min-width: $breakpoint-large) {
+    width: 570px;
+  }
+}
+
+.order__goal-lg {
+  @media (min-width: $breakpoint-large) {
+    width: 570px;
+  }
+}
+
+.order__button-wrapper {
+  @media (min-width: $breakpoint-medium) {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.order__button {
+  @media (min-width: $breakpoint-medium) {
+    width: 282px;
+    margin-right: 45px;
+  }
+
+  @media (min-width: $breakpoint-large) {
+    width: 570px;
+  }
 }

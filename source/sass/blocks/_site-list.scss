@@ -32,6 +32,13 @@
 
     @media (min-width: $breakpoint-large) {
       @include font(20px, 30px);
+    }
+  }
+}
+
+.site-list__item--color-white {
+  a {
+    @media (min-width: $breakpoint-large) {
       color: $color-white;
     }
   }

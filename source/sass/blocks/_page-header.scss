@@ -3,6 +3,10 @@
     position: absolute;
     width: 100%;
     z-index: 1;
+
+    &--position {
+      position: inherit;
+    }
   }
 }
 
@@ -10,9 +14,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 12px;
-  padding-bottom: 16.39px;
-  border-bottom: 1px solid $color-whisper;
+  padding: 12px 20px 16px 20px;
 
   &::before {
     content: "";

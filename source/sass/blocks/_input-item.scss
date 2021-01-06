@@ -1,15 +1,59 @@
 .input-item {
+  @include font(16px, 18px);
   display: flex;
+  align-items: center;
   margin-bottom: 12px;
   text-transform: uppercase;
+  color: $color-dark-gray;
+  position: relative;
+
+  @media (min-width: $breakpoint-large) {
+    width: 570px;
+  }
+
+  &--email {
+    &::after {
+      content: "";
+      position: absolute;
+      right: 15px;
+      widows: 20px;
+      height: 14px;
+      background: url("../img/icon-email.svg") no-repeat right;
+      padding-right: 30px;
+    }
+  }
+
+  &--phone {
+    &::after {
+      content: "";
+      position: absolute;
+      right: 13px;
+      widows: 20px;
+      height: 20px;
+      background: url("../img/icon-phone.svg") no-repeat right;
+      padding-right: 30px;
+    }
+  }
 }
 
 .input-item__text {
   flex-shrink: 0;
   margin-right: 14px;
+
+  @media (min-width: $breakpoint-medium) {
+    @include font(20px, 30px);
+  }
 }
 
 .input-item__input {
-  padding-left: 14px;
+  @include font(16px, 18px);
   width: 100%;
+  text-transform: uppercase;
+  font-family: inherit;
+  padding: 13px 0 14px 14px;
+  border: 1px solid $color-platinum;
+
+  @media (min-width: $breakpoint-medium) {
+    @include font(20px, 30px);
+  }
 }

@@ -1,3 +1,7 @@
 .title-special {
   @include font(24px, 26px);
+
+  @media (min-width: $breakpoint-medium) {
+    @include font(36px, 36px);
+  }
 }
