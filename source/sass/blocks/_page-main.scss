@@ -23,7 +23,13 @@
   @media (min-width: $breakpoint-large) {
     display: flex;
     justify-content: space-between;
-    width: 1300px;
+    width: 1220px;
     margin: 0 auto;
+    margin-bottom: 20px;
+
+    .container {
+      width: 570px;
+      padding-right: 0;
+    }
   }
 }

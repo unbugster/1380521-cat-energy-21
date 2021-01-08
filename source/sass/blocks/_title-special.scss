@@ -1,7 +1,73 @@
 .title-special {
-  @include font(24px, 26px);
+  position: relative;
 
-  @media (min-width: $breakpoint-medium) {
-    @include font(36px, 36px);
+  br {
+    @media (min-width: $breakpoint-medium) {
+      display: none;
+    }
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    height: 3px;
+    background-color: $color-green;
+    width: 100%;
+    left: 0;
+    top: 46%;
+    transform: translate(0, -50%);
+    z-index: 1;
+  }
+
+  &--position--top {
+    &::before {
+      top: 38%;
+
+      @media (min-width: $breakpoint-medium) {
+        top: 65%;
+      }
+    }
+  }
+
+  span {
+    @include font(24px, 26px);
+    position: relative;
+    z-index: 2;
+    background-color: $color-white;
+    display: inline-block;
+    padding-right: 24px;
+    font-weight: 400;
+
+
+    @media (min-width: $breakpoint-medium) {
+      @include font(36px, 36px);
+      padding-left: 0;
+      padding-right: 40px;
+    }
+
+    @media (min-width: $breakpoint-large) {
+      padding-left: 0;
+    }
+
+    &::before {
+      content: "";
+      width: 24px;
+      height: 100%;
+      position: absolute;
+      background-color: $color-white;
+      top: 0;
+      left: -24px;
+
+      @media (min-width: $breakpoint-medium) {
+        width: 34px;
+        left: -34px;
+      }
+
+      @media (min-width: $breakpoint-large) {
+        display: block;
+        width: 38px;
+        left: -38px;
+      }
+    }
   }
 }
