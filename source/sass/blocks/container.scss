@@ -1,8 +1,6 @@
 .container {
   margin: 0 auto;
-  padding-left: 20px;
-  padding-right: 20px;
-  width: 320px;
+  width: 280px;
 
   @media (min-width: $breakpoint-medium) {
     width: 708px;
@@ -10,7 +8,6 @@
   }
 
   @media (min-width: $breakpoint-large) {
-    width: 1300px;
-    padding: 0 40px;
+    width: 1280px;
   }
 }

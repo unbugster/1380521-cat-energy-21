@@ -10,6 +10,13 @@
   @media (min-width: $breakpoint-medium) {
     display: flex;
     justify-content: space-between;
+    margin: 0 auto;
+    width: 708px;
+    align-items: center;
+  }
+
+  @media (min-width: $breakpoint-large) {
+    width: 1300px;
   }
 }
 

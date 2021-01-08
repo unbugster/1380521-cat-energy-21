@@ -1,18 +1,37 @@
 .order__catdata {
-  @include fieldset-border;
-  margin: 0;
+  border: none;
+  margin: 0 0 24px 0;
   padding: 0;
+
+  @media (min-width: $breakpoint-medium) {
+    margin: 0;
+  }
+
+
+  label:last-child {
+    margin-bottom: 0;
+  }
 }
 
+
 .order__goal {
-  @include fieldset-border;
   @include font(16px, 18px);
   margin: 0;
   padding: 22px 0 0 0;
   color: $color-dark-gray2;
+  border: none;
 
-  &:last-child {
-    margin-bottom: 19px;
+  border-bottom: 1px solid $color-special-gray;
+  border-top: 1px solid $color-special-gray;
+
+  @media (min-width: $breakpoint-medium) {
+    padding-bottom: 25px;
+    padding-top: 25px;
+    border: none;
+  }
+
+  @media (min-width: $breakpoint-large) {
+    border: 1px solid $color-platinum;
   }
 }
 
@@ -23,6 +42,11 @@
 
 .order__owner-title {
   padding: 26px 0 35px 0;
+  width: 100%;
+
+  @media (min-width: $breakpoint-medium) {
+    padding-top: 70px;
+  }
 }
 
 .order__owner {
@@ -35,6 +59,13 @@
   }
 }
 
+.order__owner-wrapper {
+  @media (min-width: $breakpoint-large) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
 .order__comment {
   border: none;
   margin: 0;
@@ -44,6 +75,7 @@
 .order__comment-title {
   margin: 0;
   padding: 23px 0 37px 0;
+  width: 100%;
 }
 
 .order__more {
@@ -54,10 +86,57 @@
 
 .order__more-title {
   padding: 22px 0 34px 0;
+  width: 100%;
+}
+
+.order__more-wrapper {
+  @media (min-width: $breakpoint-medium) {
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    grid-column-gap: 123px;
+    grid-row-gap: 28px;
+  }
+
+  @media (min-width: $breakpoint-large) {
+    display: flex;
+  }
 }
 
 .order__required {
   text-align: center;
   margin: 0;
   padding: 21px 5px 32px 0;
+}
+
+.order__goal-container {
+  @media (min-width: $breakpoint-medium) {
+    border: 1px solid $color-platinum;
+    padding-bottom: 25px;
+    padding-top: 25px;
+    padding-left: 27px;
+    padding-right: 20px;
+  }
+
+  @media (min-width: $breakpoint-large) {
+    border: none;
+    padding-top: 0;
+  }
+}
+
+.order__button-wrapper {
+  @media (min-width: $breakpoint-medium) {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.order__button {
+  @media (min-width: $breakpoint-medium) {
+    width: 282px;
+    margin-right: 45px;
+  }
+
+  @media (min-width: $breakpoint-large) {
+    width: 570px;
+  }
 }

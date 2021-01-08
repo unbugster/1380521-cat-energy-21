@@ -1,8 +1,11 @@
 .page {
+  @include font(14px, 18px);
   height: 100%;
-  font-size: 14px;
-  line-height: 18px;
   font-family: $font-oswald;
+
+  @media (min-width: $breakpoint-medium) {
+    @include font(20px, 30px);
+  }
 }
 
 .page__body {

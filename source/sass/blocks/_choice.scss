@@ -7,6 +7,10 @@
   align-items: center;
   position: relative;
 
+  @media (min-width: $breakpoint-medium) {
+    @include font(20px, 30px);
+  }
+
   &::before {
     content: "";
     display: block;

@@ -7,4 +7,11 @@
   width: 100%;
   color: $color-dark-gray;
   text-transform: uppercase;
+  font-family: inherit;
+  text-align: center;
+
+  @media (min-width: $breakpoint-medium) {
+    padding: 10px 0 0 18px;
+    text-align: left;
+  }
 }
