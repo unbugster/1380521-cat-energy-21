@@ -59,7 +59,14 @@
 }
 
 .contacts__container {
-  @media (min-width: $breakpoint-large) {
+  @media (min-width: $breakpoint-medium) {
     position: relative;
+    padding-left: 70px;
+    padding-right: 65px;
+  }
+
+  @media (min-width: $breakpoint-large) {
+    padding-left: 30px;
+    padding-right: 30px;
   }
 }

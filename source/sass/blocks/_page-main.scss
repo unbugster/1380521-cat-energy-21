@@ -6,8 +6,16 @@
 
   @media (min-width: $breakpoint-medium) {
     @include font(60px, 60px);
+
+    padding-left: 40px;
+    padding-right: 35px;
+  }
+
+  @media (min-width: $breakpoint-large) {
+    padding-left: 0;
   }
 }
+
 
 .page-main__text {
   padding: 0;
@@ -16,6 +24,12 @@
 
   @media (min-width: $breakpoint-medium) {
     @include font(20px, 30px);
+    padding-left: 40px;
+    padding-right: 35px;
+  }
+
+  @media (min-width: $breakpoint-large) {
+    padding-left: 0;
   }
 }
 
@@ -31,5 +45,17 @@
       width: 570px;
       padding-right: 0;
     }
+  }
+}
+
+.page-main__form-wrapper {
+  @media (min-width: $breakpoint-medium) {
+    padding-left: 40px;
+    padding-right: 35px;
+  }
+
+  @media (min-width: $breakpoint-large) {
+    padding-left: 0;
+    padding-right: 0;
   }
 }
