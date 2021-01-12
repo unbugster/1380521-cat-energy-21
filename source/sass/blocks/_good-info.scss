@@ -1,3 +1,12 @@
+.good-info {
+  td {
+    @media (min-width: $breakpoint-medium) {
+      padding: 7px 2px 9px 2px;
+      border-bottom: 1px solid $color-silver;
+    }
+  }
+}
+
 .good-info__property {
   text-align: left;
 }

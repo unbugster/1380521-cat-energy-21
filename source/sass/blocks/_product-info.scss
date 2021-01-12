@@ -1,7 +1,17 @@
 .product-info__property {
   text-align: left;
+
+  @media (min-width: $breakpoint-large) {
+    @include font(16px, 20px);
+    width: 245px;
+  }
 }
 
 .product-info__value {
   text-align: right;
+
+  @media (min-width: $breakpoint-large) {
+    text-align: left;
+    flex-grow: 1;
+  }
 }

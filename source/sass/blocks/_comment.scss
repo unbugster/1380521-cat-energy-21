@@ -1,5 +1,15 @@
 .comment {
   display: flex;
+
+  @media (min-width: $breakpoint-medium) {
+    padding-left: 40px;
+    padding-right: 35px;
+  }
+
+  @media (min-width: $breakpoint-large) {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 .comment__textarea {

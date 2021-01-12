@@ -4,6 +4,18 @@
   background-repeat: no-repeat;
   margin-bottom: 21px;
   background-position: center;
+
+  @media (min-width: $breakpoint-medium) {
+    height: 200px;
+    background-image: url("../img/gift-photo-tablet.jpg");
+  }
+
+  @media (min-width: $breakpoint-large) {
+    height: 289px;
+    flex-basis: 20%;
+    margin-bottom: 0;
+    background-image: url("../../img/gift-photo-desktop.jpg");
+  }
 }
 
 .gift__text {

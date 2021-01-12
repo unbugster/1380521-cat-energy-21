@@ -4,8 +4,22 @@
 
 .catalog__list {
   @include clear-list;
+
+  @media (min-width: $breakpoint-medium) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
 
 .catalog__item {
+  padding-top: 19px;
   border-bottom: 1px solid $color-special-gray2;
+
+  @media (min-width: $breakpoint-medium) {
+    padding-top: 81px;
+    margin-bottom: 59px;
+    border-bottom: none;
+    flex-basis: 20%;
+  }
 }

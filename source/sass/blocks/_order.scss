@@ -47,6 +47,11 @@
 
   @media (min-width: $breakpoint-large) {
     border: 1px solid $color-platinum;
+
+    .container {
+      padding-left: 0;
+      padding-right: 0;
+    }
   }
 }
 
@@ -72,24 +77,17 @@
   &:last-child {
     margin-bottom: 0;
   }
-
-  @media (min-width: $breakpoint-medium) {
-    .container {
-      padding-left: 70px;
-      padding-right: 65px;
-    }
-  }
-
-  @media (min-width: $breakpoint-large) {
-    .container {
-      padding-left: 30px;
-      padding-right: 30px;
-    }
-  }
 }
 
 .order__owner-wrapper {
+  @media (min-width: $breakpoint-medium) {
+    padding-right: 35px;
+    padding-left: 40px;
+  }
+
   @media (min-width: $breakpoint-large) {
+    padding-left: 0;
+    padding-right: 0;
     display: flex;
     justify-content: space-between;
   }
@@ -99,20 +97,6 @@
   border: none;
   margin: 0;
   padding: 0;
-
-  @media (min-width: $breakpoint-medium) {
-    .container {
-      padding-left: 70px;
-      padding-right: 65px;
-    }
-  }
-
-  @media (min-width: $breakpoint-large) {
-    .container {
-      padding-left: 30px;
-      padding-right: 30px;
-    }
-  }
 }
 
 .order__comment-title {
@@ -125,20 +109,6 @@
   margin: 0;
   padding: 0;
   border: none;
-
-  @media (min-width: $breakpoint-medium) {
-    .container {
-      padding-left: 70px;
-      padding-right: 65px;
-    }
-  }
-
-  @media (min-width: $breakpoint-large) {
-    .container {
-      padding-left: 30px;
-      padding-right: 30px;
-    }
-  }
 }
 
 .order__more-title {
@@ -152,9 +122,13 @@
     grid-template-columns: min-content 1fr;
     grid-column-gap: 123px;
     grid-row-gap: 28px;
+    padding-left: 40px;
+    padding-right: 35px;
   }
 
   @media (min-width: $breakpoint-large) {
+    padding-left: 0;
+    padding-right: 0;
     display: flex;
   }
 }

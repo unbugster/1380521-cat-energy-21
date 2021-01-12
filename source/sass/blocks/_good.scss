@@ -1,11 +1,28 @@
 .good {
   display: flex;
   flex-wrap: wrap;
-  padding-top: 19px;
+
+  @media (min-width: $breakpoint-medium) {
+    min-width: 324px;
+    flex-direction: column;
+    padding: 0 36px 40px 36px;
+    background-color: $color-light-gray;
+  }
+
+  @media (min-width: $breakpoint-large) {
+    min-width: 245px;
+    padding: 0 35px 40px 30px;
+  }
 }
 
 .good__link-img {
   flex-basis: 50%;
+
+  @media (min-width: $breakpoint-medium) {
+    position: relative;
+    align-self: center;
+    bottom: 40px;
+  }
 }
 
 .good__link-title {
@@ -15,10 +32,21 @@
 
 .good__title {
   @include font(16px, 20px);
+  font-weight: 400;
   text-transform: uppercase;
   margin: 0;
-  padding: 0 38px 18px 0;
+  padding: 0 40px 0 0;
   color: $color-dark-gray2;
+  margin-bottom: 18px;
+
+  @media (min-width: $breakpoint-medium) {
+    @include font(20px, 24px);
+    text-align: center;
+    max-width: 174px;
+    margin: 0 auto;
+    margin-bottom: 21px;
+    padding: 0 10px 0;
+  }
 }
 
 .good__container {
@@ -35,4 +63,13 @@
 
 .good__button {
   margin-bottom: 18px;
+
+  @media (min-width: $breakpoint-medium) {
+    min-width: 248px;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $breakpoint-large) {
+    min-width: 168px;
+  }
 }

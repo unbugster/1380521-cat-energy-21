@@ -5,4 +5,27 @@
 
 .adding__list {
   @include clear-list;
+
+  @media (min-width: $breakpoint-large) {
+    flex-basis: 73%;
+  }
+}
+
+.adding__item {
+  @media (min-width: $breakpoint-medium) {
+    padding-left: 41px;
+    padding-right: 38px;
+  }
+
+  @media (min-width: $breakpoint-large) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.adding__content {
+  @media (min-width: $breakpoint-large) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
