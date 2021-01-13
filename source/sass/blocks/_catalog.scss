@@ -1,5 +1,12 @@
 .catalog {
   padding-bottom: 25px;
+
+  @media (max-width: $breakpoint-small-catalog) {
+    &.container {
+      padding: 0;
+      width: 100%;
+    }
+  }
 }
 
 .catalog__list {
@@ -13,12 +20,14 @@
 }
 
 .catalog__item {
-  padding-top: 19px;
+  width: 320px;
+  margin: 0 auto;
+  padding: 19px 20px 0 20px;
   border-bottom: 1px solid $color-special-gray2;
 
   @media (min-width: $breakpoint-medium) {
-    padding-top: 81px;
-    margin-bottom: 59px;
+    margin: 0 0 59px 0;
+    padding: 81px 0 0 0;
     border-bottom: none;
     flex-basis: 20%;
   }

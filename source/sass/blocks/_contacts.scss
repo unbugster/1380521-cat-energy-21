@@ -4,7 +4,7 @@
   font-weight: 400;
 
   @media (min-width: $breakpoint-medium) {
-    @include font(20px, 21px);
+    @include font(20px, 22px);
   }
 }
 
@@ -29,7 +29,11 @@
   @media (min-width: $breakpoint-medium) {
     @include font(16px, 20px);
     text-align: right;
-    width: 150px;
+    flex-basis: 31%;
+  }
+
+  @media (min-width: $breakpoint-large) {
+    flex-basis: 50%;
   }
 }
 

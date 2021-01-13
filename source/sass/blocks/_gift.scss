@@ -14,12 +14,13 @@
     height: 289px;
     flex-basis: 20%;
     margin-bottom: 0;
-    background-image: url("../../img/gift-photo-desktop.jpg");
+    background-image: url("../img/gift-photo-desktop.jpg");
   }
 }
 
 .gift__text {
   @include font(16px, 20px);
+  font-family: $font-arial;
   width: 161px;
   text-align: center;
   margin: 0 auto;

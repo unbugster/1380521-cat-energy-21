@@ -1,14 +1,19 @@
 .site-list__item {
   text-align: center;
-  padding: 22px 20px 24px 20px;
+  padding: 22px 0 24px 0;
   border-bottom: 1px solid $color-whisper;
 
   &:first-child {
     border-top: 1px solid $color-whisper;
+
+    @media (min-width: $breakpoint-medium) {
+      border-top: none;
+    }
   }
 
   @media (min-width: $breakpoint-medium) {
     border: none;
+    margin-left: 35px;
 
     &--active {
       border-bottom: 1px solid $color-green;
@@ -31,6 +36,7 @@
 
     @media (min-width: $breakpoint-medium) {
       @include font(18px, 24px);
+      font-weight: 400;
     }
 
     @media (min-width: $breakpoint-large) {

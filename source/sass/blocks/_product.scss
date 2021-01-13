@@ -23,15 +23,15 @@
   font-weight: 400;
 
   @media (min-width: $breakpoint-medium) {
+    @include font(20px, 20px);
     flex-basis: 33%;
     margin: 0;
   }
 
   @media (min-width: $breakpoint-large) {
+    @include font(20px, 20px);
     flex-basis: auto;
     width: 325px;
-
-    @include font(20px, 20px);
   }
 }
 
@@ -42,6 +42,7 @@
   color: $color-dark-gray;
 
   @media (min-width: $breakpoint-medium) {
+    @include font(16px, 20px);
     flex-basis: 33%;
     margin: 0;
   }

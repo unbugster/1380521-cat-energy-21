@@ -47,6 +47,10 @@
     margin-bottom: 21px;
     padding: 0 10px 0;
   }
+
+  @media (min-width: $breakpoint-large) {
+    @include font(20px, 21px);
+  }
 }
 
 .good__container {
