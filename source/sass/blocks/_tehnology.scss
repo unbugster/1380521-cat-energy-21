@@ -48,11 +48,6 @@
   padding-right: 5px;
   counter-increment: list-counter;
 
-  /*
-  &:not(:last-child) {
-    margin-bottom: 20px;
-  } */
-
   @media (min-width: $breakpoint-medium) {
     @include font(16px, 24px);
     padding-top: 40px;
@@ -60,7 +55,6 @@
     display: block;
     padding-bottom: 57px;
     margin-bottom: 36px;
-
 
     &:not(:nth-child(2n)) {
       margin-right: 133px;

@@ -22,13 +22,10 @@
   }
 
   img {
-
     position: absolute;
     top: 50%;
     left: 43%;
     transform: translate(-50%, -50%);
-
-
     display: block;
     margin: 0 auto;
 
@@ -41,7 +38,6 @@
 
     @media (min-width: $breakpoint-large) {
       z-index: 2;
-
       top: 67px;
       left: 426px;
     }

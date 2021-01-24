@@ -59,7 +59,7 @@
     z-index: 2;
     position: relative;
     padding-top: 0;
-    background-image: linear-gradient(to right, #f2f2f2 59%, #eaeaea 41%);
+    background-image: linear-gradient(to right, $color-light-gray 59%, $color-gray 41%);
     padding-bottom: 70px;
   }
 }

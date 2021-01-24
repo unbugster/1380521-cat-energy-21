@@ -13,7 +13,6 @@
     flex-basis: 569px;
   }
 
-
   &--email svg {
     position: absolute;
     right: 15px;
@@ -64,7 +63,6 @@
       fill: $color-green;
     }
   }
-
 
   @media (min-width: $breakpoint-medium) {
     @include font(20px, 30px);
