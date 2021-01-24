@@ -4,9 +4,15 @@
   @media (min-width: $breakpoint-medium) {
     background-color: $color-white;
   }
+
+  @media (min-width: $breakpoint-large) {
+    padding-top: 10px;
+  }
 }
 
 .example__container {
+  padding-bottom: 10px;
+
   @media (min-width: $breakpoint-medium) {
     width: 100%;
     padding: 0;
@@ -16,6 +22,7 @@
     display: flex;
     justify-content: space-between;
     position: relative;
+    width: 1280px;
 
     &::before {
       content: "";
@@ -32,27 +39,34 @@
 
 .example__wrapper {
   @media (min-width: $breakpoint-medium) {
-    width: 708px;
+    width: 768px;
     padding: 0 30px;
     margin: 0 auto;
   }
 }
 
 .example__grad {
+  padding-bottom: 25px;
+
   @media (min-width: $breakpoint-medium) {
-    background-image: linear-gradient(to right, $color-light-gray 50%, $color-gray 50%);
+    background-color: $color-gray;
+    position: relative;
+    padding-bottom: 67px;
+    padding-top: 100px;
   }
 
   @media (min-width: $breakpoint-large) {
-    padding-top: 240px;
     z-index: 2;
     position: relative;
+    padding-top: 0;
+    background-image: linear-gradient(to right, #f2f2f2 59%, #eaeaea 41%);
+    padding-bottom: 70px;
   }
 }
 
 .example__bg {
   @media (min-width: $breakpoint-large) {
-    background-image: linear-gradient(to right, $color-light-gray 71.8%, $color-gray 28.2%);
+    background-image: linear-gradient(to right, $color-light-gray 73.8%, $color-gray 26.2%);
   }
 }
 
@@ -60,10 +74,11 @@
   @include clear-list;
   display: flex;
   justify-content: space-between;
+  margin-bottom: 12px;
 
   @media (min-width: $breakpoint-large) {
     justify-content: flex-start;
-    margin-bottom: 55px;
+    margin-bottom: 50px;
   }
 }
 
@@ -75,11 +90,13 @@
 
   @media (min-width: $breakpoint-medium) {
     margin-right: 42px;
+    width: 162px;
   }
 }
 
 .example__cost {
   @include font(14px, 20px);
+  margin: 0;
   text-align: center;
   text-transform: uppercase;
 
@@ -88,14 +105,25 @@
     width: 188px;
     text-align: right;
     margin: 0;
+    padding-top: 12px;
+
+    span {
+      display: block;
+      padding-top: 9px;
+    }
   }
 
   @media (min-width: $breakpoint-large) {
     text-align: left;
     width: 100%;
+    padding-top: 0;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 125px;
 
     span {
-      padding-left: 40px;
+      padding-left: 0;
+      padding-top: 0;
     }
   }
 }
@@ -119,6 +147,14 @@
 
   @media (min-width: $breakpoint-medium) {
     @include font(16px, 24px);
+    padding-right: 6px;
+    margin-bottom: 54px;
+  }
+
+  @media (min-width: $breakpoint-large) {
+    padding-top: 70px;
+    margin-bottom: 68px;
+    padding-right: 15px;
   }
 }
 
@@ -128,16 +164,25 @@
 
   @media (min-width: $breakpoint-medium) {
     margin-bottom: 63px;
+    padding-top: 43px;
   }
 
   @media (min-width: $breakpoint-large) {
-    margin-bottom: 76px;
+    margin-bottom: 75px;
+    padding-top: 0;
   }
 }
 
 .example__content {
+  margin-bottom: 42px;
+
+  @media (min-width: $breakpoint-medium) {
+    padding-bottom: 189px;
+  }
+
   @media (min-width: $breakpoint-large) {
+    padding-bottom: 0;
+    margin-bottom: 0;
     width: 570px;
-    padding-bottom: 65px;
   }
 }

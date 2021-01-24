@@ -19,6 +19,7 @@
   text-transform: uppercase;
   font-family: inherit;
   text-align: center;
+  border: 1px solid $color-platinum;
 
   @media (min-width: $breakpoint-medium) {
     padding: 10px 0 0 18px;

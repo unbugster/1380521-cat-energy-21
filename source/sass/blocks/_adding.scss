@@ -1,3 +1,9 @@
+.adding {
+  @media (min-width: $breakpoint-medium) {
+    padding-bottom: 86px;
+  }
+}
+
 .adding__title {
   padding: 18px 0 43px 0;
   margin: 0;
@@ -20,6 +26,12 @@
   @media (min-width: $breakpoint-large) {
     padding-left: 0;
     padding-right: 0;
+
+    border-top: 1px solid $color-very-light-gray;
+
+    &:last-child {
+      border-bottom: 1px solid $color-very-light-gray;
+    }
   }
 }
 

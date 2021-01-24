@@ -8,12 +8,32 @@
   color: $color-white;
   background-color: $color-green;
   padding-top: 10px;
-  padding-bottom: 10px;
+  padding-bottom: 12px;
   border: none;
+
+  @media (min-width: $breakpoint-medium) {
+    padding-top: 17px;
+    padding-bottom: 17px;
+  }
+
+  &:hover {
+    background-color: $color-limeade;
+  }
+
+
+  &:active {
+    span {
+      opacity: 0.3;
+    }
+  }
 
   &--gray {
 
     background-color: $color-light-gray;
     color: $color-dark-gray;
+
+    &:hover {
+      background-color: $color-special-gray2;
+    }
   }
 }

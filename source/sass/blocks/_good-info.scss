@@ -3,7 +3,7 @@
     @media (min-width: $breakpoint-medium) {
       @include font(16px, 16px);
       padding: 7px 2px 9px 2px;
-      border-bottom: 1px solid $color-silver;
+      border-bottom: 1px solid $color-very-light-gray;
     }
   }
 }

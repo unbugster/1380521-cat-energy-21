@@ -1,5 +1,14 @@
 .copyright {
   display: flex;
+  align-items: center;
+
+  &:hover path {
+    fill: $color-green;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .copyright__text {

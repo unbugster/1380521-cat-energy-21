@@ -15,7 +15,7 @@
   justify-content: space-between;
   align-items: center;
   padding-top: 12px;
-  padding-bottom: 16px;
+  padding-bottom: 13px;
 
   &::before {
     content: "";
@@ -29,4 +29,10 @@
   @media (min-width: $breakpoint-medium) {
     display: none;
   }
+}
+
+.page-header__toggle {
+  width: 35px;
+  height: 40px;
+  visibility: hidden;
 }

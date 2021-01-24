@@ -1,5 +1,11 @@
 .choice {
   text-transform: uppercase;
+
+  &:hover .choice__text {
+    &::before {
+      border: 1px solid $color-silver;
+    }
+  }
 }
 
 .choice__text {
@@ -16,7 +22,7 @@
     display: block;
     width: 30px;
     height: 30px;
-    border: 1px solid $color-silver;
+    border: 1px solid $color-very-light-gray;
     border-radius: 50%;
     margin-right: 15px;
   }
@@ -36,6 +42,12 @@
         border-radius: 50%;
         margin: auto;
       }
+    }
+  }
+
+  &:disabled {
+    +.choice__text {
+      opacity: 0.3;
     }
   }
 }

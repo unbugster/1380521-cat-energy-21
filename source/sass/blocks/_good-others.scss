@@ -2,6 +2,8 @@
   justify-content: center;
 
   @media (min-width: $breakpoint-medium) {
+    height: 100%;
+    padding-top: 52px;
     background-color: $color-white;
     border: 1px solid $color-light-gray;
   }
@@ -12,17 +14,34 @@
   text-transform: uppercase;
   color: $color-black-special;
   text-align: center;
+
+  &::before {
+    content: "";
+    margin: 0 auto 23px auto;
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-image: url("../img/icon-plus.svg");
+
+    @media (min-width: $breakpoint-medium) {
+      margin-bottom: 49px;
+      width: 60px;
+      height: 60px;
+      background-repeat: no-repeat;
+      background-size: 100%;
+    }
+  }
 }
 
 .good-others__title {
   @include font(16px, 20px);
   margin: 0 0 8px 0;
-  padding-top: 78px;
   font-weight: 400;
 
   @media (min-width: $breakpoint-medium) {
     @include font(20px, 22px);
-    margin-bottom: 23px;
+    margin: 0 auto 23px auto;
+    max-width: 134px;
   }
 }
 
@@ -36,5 +55,7 @@
 
   @media (min-width: $breakpoint-medium) {
     @include font(16px, 18px);
+    max-width: 167px;
+    align-self: center;
   }
 }

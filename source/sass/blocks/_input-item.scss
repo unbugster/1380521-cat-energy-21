@@ -10,31 +10,22 @@
 
   @media (min-width: $breakpoint-large) {
     margin-bottom: 20px;
+    flex-basis: 569px;
   }
 
 
-  &--email {
-    &::after {
-      content: "";
-      position: absolute;
-      right: 15px;
-      width: 20px;
-      height: 14px;
-      background: url("../img/icon-email.svg") no-repeat right;
-      padding-right: 30px;
-    }
+  &--email svg {
+    position: absolute;
+    right: 15px;
+    width: 20px;
+    height: 14px;
   }
 
-  &--phone {
-    &::after {
-      content: "";
-      position: absolute;
-      right: 13px;
-      width: 20px;
-      height: 20px;
-      background: url("../img/icon-phone.svg") no-repeat right;
-      padding-right: 30px;
-    }
+  &--phone svg {
+    position: absolute;
+    right: 13px;
+    width: 20px;
+    height: 20px;
   }
 }
 
@@ -54,6 +45,26 @@
   font-family: inherit;
   padding: 13px 0 14px 14px;
   border: 1px solid $color-platinum;
+
+  &:hover {
+    border: 1px solid $color-very-light-gray;
+  }
+
+  &:focus {
+    border: 1px solid $color-dark-gray;
+    outline: 1px solid $color-dark-gray;
+  }
+
+  &:disabled {
+    +svg path {
+      stroke: $color-green;
+    }
+
+    +svg g {
+      fill: $color-green;
+    }
+  }
+
 
   @media (min-width: $breakpoint-medium) {
     @include font(20px, 30px);

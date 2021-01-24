@@ -3,13 +3,22 @@
 }
 
 .page-footer__logo {
-  padding-top: 39px;
+  padding-top: 43px;
   padding-bottom: 32px;
   border-bottom: 1px solid $color-special-gray;
   display: block;
+  cursor: pointer;
 
   @media (min-width: $breakpoint-medium) {
     padding: 0;
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
   }
 }
 
@@ -25,11 +34,11 @@
 .page-footer__social-list {
   @include clear-list;
   display: flex;
-  width: 46%;
+  //width: 46%;
   justify-content: space-between;
   margin: 0 auto;
   height: 22px;
-  border: 1px solid tomato;
+  align-items: center;
 
   @media (min-width: $breakpoint-medium) {
     margin: 0;
@@ -64,5 +73,11 @@
 }
 
 .page-footer__social-wrapper {
+  padding: 20px;
   border-bottom: 1px solid $color-special-gray;
+
+  @media (min-width: $breakpoint-medium) {
+    border: none;
+    padding: 0;
+  }
 }

@@ -59,3 +59,9 @@
     padding-right: 0;
   }
 }
+
+.page-main__order {
+  @media (min-width: $breakpoint-large) {
+    margin-bottom: 80px;
+  }
+}
