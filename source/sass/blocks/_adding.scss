@@ -1,19 +1,32 @@
 .adding {
   @media (min-width: $breakpoint-medium) {
-    padding-bottom: 86px;
+    padding-bottom: 41px;
+  }
+
+  @media (min-width: $breakpoint-large) {
+    padding-bottom: 20px;
   }
 }
 
 .adding__title {
-  padding: 18px 0 43px 0;
-  margin: 0;
+  padding: 0;
+  margin: 0 0 32px 0;
+
+  @media (min-width: $breakpoint-medium) {
+    margin-bottom: 80px;
+  }
 }
 
 .adding__list {
   @include clear-list;
+  margin-bottom: 42px;
+
+  @media (min-width: $breakpoint-medium) {
+    margin-bottom: 69px;
+  }
 
   @media (min-width: $breakpoint-large) {
-    flex-basis: 73%;
+    flex-basis: 896px;
   }
 }
 
@@ -21,11 +34,22 @@
   @media (min-width: $breakpoint-medium) {
     padding-left: 41px;
     padding-right: 38px;
+
+    padding-top: 25px;
+    padding-bottom: 27px;
+
+
+    border: 1px solid $color-very-light-gray;
+    border-bottom: none;
+
+    &:last-child {
+      border-bottom: 1px solid $color-very-light-gray;
+    }
   }
 
   @media (min-width: $breakpoint-large) {
-    padding-left: 0;
-    padding-right: 0;
+    padding: 0;
+    border: inherit;
     border-top: 1px solid $color-very-light-gray;
 
     &:last-child {

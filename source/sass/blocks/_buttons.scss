@@ -1,5 +1,6 @@
 .button {
   @include font(16px, 20px);
+  font-family: $font-oswald;
   text-transform: uppercase;
   display: block;
   text-align: center;

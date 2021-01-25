@@ -1,5 +1,6 @@
 .catalog {
   padding-bottom: 25px;
+  margin-bottom: 28px;
 
   @media (max-width: $breakpoint-small-catalog) {
     &.container {
@@ -7,12 +8,23 @@
       width: 100%;
     }
   }
+
+  @media (min-width: $breakpoint-medium) {
+    padding-bottom: 5px;
+    margin-bottom: 1px;
+  }
+
+  @media (min-width: $breakpoint-large) {
+    padding-bottom: 15px;
+  }
 }
 
 .catalog__list {
   @include clear-list;
+  border-top: 1px solid $color-special-gray2;
 
   @media (min-width: $breakpoint-medium) {
+    border: none;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -22,13 +34,19 @@
 .catalog__item {
   width: 320px;
   margin: 0 auto;
-  padding: 19px 20px 0 20px;
+  padding: 25px 20px 20px 20px;
   border-bottom: 1px solid $color-special-gray2;
 
   @media (min-width: $breakpoint-medium) {
+    width: 100%;
+    position: relative;
     margin: 0 0 59px 0;
     padding: 81px 0 0 0;
     border-bottom: none;
     flex-basis: 20%;
+  }
+
+  @media (min-width: $breakpoint-large) {
+    padding-top: 83px;
   }
 }

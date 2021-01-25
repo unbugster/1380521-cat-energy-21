@@ -1,9 +1,10 @@
 .product {
   display: flex;
   flex-wrap: wrap;
-  padding-bottom: 19px;
+  padding-bottom: 15px;
 
   @media (min-width: $breakpoint-medium) {
+    padding-bottom: 0;
     align-items: center;
     justify-content: space-between;
   }
@@ -43,7 +44,7 @@
 
   @media (min-width: $breakpoint-medium) {
     @include font(16px, 20px);
-    flex-basis: 33%;
+    flex-basis: 40%;
     margin: 0;
   }
 
@@ -53,8 +54,12 @@
 }
 
 .product__button {
+  padding-bottom: 10px;
+
   @media (min-width: $breakpoint-medium) {
     margin-top: 24px;
+    padding-bottom: 9px;
+    padding-top: 9px;
   }
 
   @media (min-width: $breakpoint-large) {

@@ -8,6 +8,10 @@
   width: 100%;
   margin-bottom: 12px;
 
+  @media (min-width: $breakpoint-medium) {
+    margin-bottom: 20px;
+  }
+
   @media (min-width: $breakpoint-large) {
     margin-bottom: 20px;
     flex-basis: 569px;
@@ -30,10 +34,11 @@
 
 .input-item__text {
   flex-shrink: 0;
-  margin-right: 14px;
+  margin-right: 11px;
 
   @media (min-width: $breakpoint-medium) {
     @include font(20px, 30px);
+    margin-right: 17px;
   }
 }
 
@@ -42,7 +47,7 @@
   width: 100%;
   text-transform: uppercase;
   font-family: inherit;
-  padding: 13px 0 14px 14px;
+  padding: 13px 0 14px 16px;
   border: 1px solid $color-platinum;
 
   &:hover {
@@ -66,5 +71,6 @@
 
   @media (min-width: $breakpoint-medium) {
     @include font(20px, 30px);
+    padding: 10px 0 10px 19px;
   }
 }

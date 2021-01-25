@@ -1,10 +1,11 @@
 .order__catdata {
   border: none;
-  margin: 0 0 24px 0;
+  margin: 0 0 21px 0;
   padding: 0;
 
   @media (min-width: $breakpoint-medium) {
     margin: 0;
+    padding-bottom: 45px;
 
     .container {
       padding-left: 70px;
@@ -27,7 +28,7 @@
 .order__goal {
   @include font(16px, 18px);
   margin: 0;
-  padding: 22px 0 0 0;
+  padding: 22px 0 5px 0;
   color: $color-dark-gray2;
   border: none;
 
@@ -35,6 +36,7 @@
   border-top: 1px solid $color-special-gray;
 
   @media (min-width: $breakpoint-medium) {
+    margin-bottom: 50px;
     padding-bottom: 25px;
     padding-top: 25px;
     border: none;
@@ -47,6 +49,7 @@
 
   @media (min-width: $breakpoint-large) {
     border: 1px solid $color-platinum;
+    padding-bottom: 0;
 
     .container {
       padding-left: 0;
@@ -65,7 +68,9 @@
   width: 100%;
 
   @media (min-width: $breakpoint-medium) {
-    padding-top: 70px;
+    margin-bottom: 72px;
+    padding-top: 0;
+    padding-bottom: 0;
   }
 }
 
@@ -76,6 +81,10 @@
 
   &:last-child {
     margin-bottom: 0;
+  }
+
+  @media (min-width: $breakpoint-medium) {
+    margin-bottom: 45px;
   }
 }
 
@@ -97,27 +106,47 @@
   border: none;
   margin: 0;
   padding: 0;
+
+  @media (min-width: $breakpoint-medium) {
+    margin-bottom: 65px;
+  }
 }
 
 .order__comment-title {
   margin: 0;
-  padding: 23px 0 37px 0;
+  padding: 10px 0 10px 0;
   width: 100%;
+  margin-bottom: 26px;
+
+  @media (min-width: $breakpoint-medium) {
+    padding: 0;
+    margin-bottom: 72px;
+  }
 }
 
 .order__more {
-  margin: 0;
+  margin: 0 0 19px 0;
   padding: 0;
   border: none;
 
+
+  @media (min-width: $breakpoint-medium) {
+    margin-bottom: 40px;
+  }
+
   @media (min-width: $breakpoint-large) {
-    margin-bottom: 60px;
+    margin-bottom: 48px;
   }
 }
 
 .order__more-title {
   padding: 22px 0 34px 0;
   width: 100%;
+
+  @media (min-width: $breakpoint-medium) {
+    padding: 0;
+    margin-bottom: 53px;
+  }
 }
 
 .order__more-wrapper {
@@ -125,7 +154,7 @@
     display: grid;
     grid-template-columns: min-content 1fr;
     grid-column-gap: 123px;
-    grid-row-gap: 28px;
+    grid-row-gap: 19px;
     padding-left: 40px;
     padding-right: 35px;
   }
@@ -139,9 +168,15 @@
 }
 
 .order__required {
+  font-family: $font-arial;
   text-align: center;
   margin: 0;
-  padding: 21px 5px 32px 0;
+  padding: 21px 5px 30px 0;
+
+  @media (min-width: $breakpoint-medium) {
+    @include font(16px, 16px);
+    padding: 0;
+  }
 
   @media (min-width: $breakpoint-large) {
     padding: 0;
@@ -151,10 +186,10 @@
 .order__goal-container {
   @media (min-width: $breakpoint-medium) {
     border: 1px solid $color-platinum;
-    padding-bottom: 25px;
     padding-top: 25px;
     padding-left: 27px;
     padding-right: 20px;
+    padding-bottom: 12px;
   }
 
   @media (min-width: $breakpoint-large) {
@@ -169,6 +204,7 @@
     align-items: center;
     padding-left: 70px;
     padding-right: 65px;
+    margin-bottom: 72px;
   }
 
   @media (min-width: $breakpoint-large) {
@@ -178,9 +214,15 @@
 }
 
 .order__button {
+
+  padding-bottom: 10px;
+
   @media (min-width: $breakpoint-medium) {
+    @include font(20px, 20px);
     width: 282px;
-    margin-right: 45px;
+    padding-top: 18px;
+    padding-bottom: 15px;
+    margin-right: 63px;
   }
 
   @media (min-width: $breakpoint-large) {

@@ -6,6 +6,7 @@
     min-width: 324px;
     flex-direction: column;
     padding: 0 36px 40px 36px;
+    padding-top: 160px;
     background-color: $color-light-gray;
   }
 
@@ -19,9 +20,25 @@
   flex-basis: 50%;
 
   @media (min-width: $breakpoint-medium) {
-    position: relative;
+    position: absolute;
+    top: 8px;
     align-self: center;
-    bottom: 40px;
+  }
+
+  @media (min-width: $breakpoint-large) {
+    left: 39px;
+  }
+
+  img {
+    @media (min-width: $breakpoint-medium) {
+      width: 168px;
+      height: 200px;
+    }
+
+    @media (min-width: $breakpoint-large) {
+      width: 172px;
+      height: 196px;
+    }
   }
 }
 
@@ -37,7 +54,7 @@
   margin: 0;
   padding: 0 40px 0 0;
   color: $color-dark-gray2;
-  margin-bottom: 18px;
+  margin-bottom: 12px;
 
   @media (min-width: $breakpoint-medium) {
     @include font(20px, 24px);
@@ -50,12 +67,19 @@
 
   @media (min-width: $breakpoint-large) {
     @include font(20px, 21px);
+    padding-left: 20px;
+    margin-bottom: 17px;
   }
 }
 
 .good__container {
   flex-basis: 50%;
-  margin-bottom: 13px;
+  margin-bottom: 23px;
+
+  @media (min-width: $breakpoint-medium) {
+    padding-top: 165px;
+    margin-bottom: 32px;
+  }
 }
 
 .good__info {
@@ -66,9 +90,11 @@
 }
 
 .good__button {
-  margin-bottom: 18px;
+  padding-bottom: 10px;
 
   @media (min-width: $breakpoint-medium) {
+    padding-top: 10px;
+    padding-bottom: 10px;
     min-width: 248px;
     margin-top: auto;
     margin-bottom: 0;
@@ -76,5 +102,7 @@
 
   @media (min-width: $breakpoint-large) {
     min-width: 168px;
+    width: 168px;
+    margin-left: 10px;
   }
 }

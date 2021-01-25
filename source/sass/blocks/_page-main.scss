@@ -6,16 +6,24 @@
 
   @media (min-width: $breakpoint-medium) {
     @include font(60px, 60px);
-
+    padding-top: 56px;
+    margin-bottom: 55px;
     padding-left: 40px;
     padding-right: 35px;
   }
 
   @media (min-width: $breakpoint-large) {
     padding-left: 0;
+    padding-top: 68px;
   }
 }
 
+.page-main__catalog-title {
+  @media (min-width: $breakpoint-medium) {
+    padding-left: 0;
+    margin-bottom: 83px;
+  }
+}
 
 .page-main__text {
   padding: 0;
@@ -24,6 +32,8 @@
 
   @media (min-width: $breakpoint-medium) {
     @include font(20px, 30px);
+    margin-top: 0;
+    margin-bottom: 65px;
     padding-left: 40px;
     padding-right: 35px;
   }
