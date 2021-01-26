@@ -36,6 +36,7 @@
   &--inst {
     @media (min-width: $breakpoint-medium) {
       svg {
+        margin-left: 6px;
         width: 23px;
         height: 23px;
       }
@@ -54,6 +55,10 @@
       svg {
         width: 28px;
         height: 33px;
+
+        path {
+          stroke-width: 0.8;
+        }
       }
     }
   }

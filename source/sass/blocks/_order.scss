@@ -110,6 +110,10 @@
   @media (min-width: $breakpoint-medium) {
     margin-bottom: 65px;
   }
+
+  @media (min-width: $breakpoint-large) {
+    margin-bottom: 68px;
+  }
 }
 
 .order__comment-title {
@@ -210,6 +214,7 @@
   @media (min-width: $breakpoint-large) {
     padding-left: 30px;
     padding-right: 30px;
+    margin-bottom: 83px;
   }
 }
 

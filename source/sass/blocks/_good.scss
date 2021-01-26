@@ -77,8 +77,11 @@
   margin-bottom: 23px;
 
   @media (min-width: $breakpoint-medium) {
-    padding-top: 165px;
     margin-bottom: 32px;
+  }
+
+  @media (min-width: $breakpoint-large) {
+    padding-top: 165px;
   }
 }
 
