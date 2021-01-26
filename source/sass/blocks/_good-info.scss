@@ -1,27 +1,31 @@
 .good-info {
   font-family: $font-arial;
 
-  td {
-    @media (min-width: $breakpoint-medium) {
-      @include font(16px, 16px);
-      padding: 5px 2px 8px 2px;
-      border-bottom: 1px solid $color-very-light-gray;
-    }
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 
-    @media (min-width: $breakpoint-large) {
-      padding: 7px 4px 8px 8px;
-    }
+  @media (min-width: $breakpoint-medium) {
+    @include font(16px, 16px);
+    grid-row-gap: 8px;
+  }
+
+  @media (min-width: $breakpoint-large) {
+    padding-left: 10px;
   }
 }
 
 .good-info__property {
-  padding-bottom: 0;
-  padding-top: 0;
-  text-align: left;
+  @media (min-width: $breakpoint-medium) {
+    border-bottom: 1px solid $color-very-light-gray;
+    padding-bottom: 8px;
+  }
 }
 
 .good-info__value {
-  padding-bottom: 0;
-  padding-top: 0;
   text-align: right;
+
+  @media (min-width: $breakpoint-medium) {
+    border-bottom: 1px solid $color-very-light-gray;
+    padding-bottom: 8px;
+  }
 }

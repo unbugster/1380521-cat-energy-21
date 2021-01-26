@@ -19,7 +19,7 @@
 
 .adding__list {
   @include clear-list;
-  margin-bottom: 42px;
+  margin-bottom: 40px;
 
   @media (min-width: $breakpoint-medium) {
     margin-bottom: 69px;
@@ -31,8 +31,15 @@
 }
 
 .adding__item {
+
+  border-top: 1px solid $color-very-light-gray;
+
+  &:last-child {
+    border-bottom: 1px solid $color-very-light-gray;
+  }
+
   @media (min-width: $breakpoint-medium) {
-    padding: 25px 38px 27px 41px;
+    padding: 25px 38px 27px 37px;
     border: 1px solid $color-very-light-gray;
     border-bottom: none;
 

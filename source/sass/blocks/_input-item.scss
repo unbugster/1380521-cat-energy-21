@@ -71,7 +71,7 @@
   width: 100%;
   text-transform: uppercase;
   font-family: inherit;
-  padding: 13px 0 14px 16px;
+  padding: 13px 35px 14px 16px;
   border: 1px solid $color-platinum;
 
   &:hover {
@@ -81,9 +81,7 @@
   &:focus {
     border: 1px solid $color-dark-gray;
     outline: 1px solid $color-dark-gray;
-  }
 
-  &:disabled {
     +svg path {
       stroke: $color-green;
     }
@@ -93,8 +91,9 @@
     }
   }
 
+
   @media (min-width: $breakpoint-medium) {
     @include font(20px, 30px);
-    padding: 10px 0 10px 19px;
+    padding: 10px 45px 10px 19px;
   }
 }

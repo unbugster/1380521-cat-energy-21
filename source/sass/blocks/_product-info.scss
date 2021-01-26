@@ -1,9 +1,17 @@
 .product-info {
   font-family: $font-arial;
-  margin-bottom: 11px;
+  margin-bottom: 14px;
+  display: flex;
+  justify-content: space-between;
 
   @media (min-width: $breakpoint-medium) {
+    padding-top: 4px;
+    justify-content: flex-end;
     margin-bottom: 0;
+  }
+
+  @media (min-width: $breakpoint-large) {
+    padding-top: 7px;
   }
 }
 
@@ -19,7 +27,6 @@
   @media (min-width: $breakpoint-large) {
     @include font(16px, 20px);
     padding-left: 14px;
-    padding-top: 10px;
     text-align: left;
     width: 245px;
   }
@@ -31,14 +38,13 @@
 
 
   @media (min-width: $breakpoint-medium) {
-    width: 89px;
+    width: 92px;
     text-align: right;
   }
 
   @media (min-width: $breakpoint-large) {
     text-align: left;
     padding-left: 10px;
-    padding-top: 10px;
     flex-grow: 1;
   }
 }

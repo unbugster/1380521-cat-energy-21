@@ -1,11 +1,9 @@
 .comment {
   display: flex;
-  height: 150px;
 
   @media (min-width: $breakpoint-medium) {
     padding-left: 40px;
     padding-right: 35px;
-    height: 174px;
   }
 
   @media (min-width: $breakpoint-large) {
@@ -16,6 +14,7 @@
 
 .comment__textarea {
   @include font(16px, 18px);
+  height: 150px;
   width: 100%;
   color: $color-dark-gray;
   text-transform: uppercase;
@@ -28,6 +27,7 @@
 
   @media (min-width: $breakpoint-medium) {
     @include font(20px, 30px);
+    height: 174px;
     padding: 10px 0 0 18px;
     text-align: left;
     padding-bottom: 5px;

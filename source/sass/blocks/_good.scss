@@ -5,7 +5,7 @@
   @media (min-width: $breakpoint-medium) {
     min-width: 324px;
     flex-direction: column;
-    padding: 0 36px 40px 36px;
+    padding: 0 36px 38px 36px;
     padding-top: 160px;
     background-color: $color-light-gray;
   }
@@ -68,7 +68,7 @@
   @media (min-width: $breakpoint-large) {
     @include font(20px, 21px);
     padding-left: 20px;
-    margin-bottom: 17px;
+    margin-bottom: 21px;
   }
 }
 
@@ -98,13 +98,12 @@
   @media (min-width: $breakpoint-medium) {
     padding-top: 10px;
     padding-bottom: 10px;
-    min-width: 248px;
+    width: 248px;
+    margin: 0 auto;
     margin-top: auto;
-    margin-bottom: 0;
   }
 
   @media (min-width: $breakpoint-large) {
-    min-width: 168px;
     width: 168px;
     margin-left: 10px;
   }

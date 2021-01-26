@@ -21,17 +21,18 @@
   &:active {
     opacity: 0.6;
   }
-}
 
-.page-footer__logo img {
-  display: block;
-  margin: 0 auto;
-  height: 24px;
+  img {
+    display: block;
+    margin: 0 auto;
+    height: 24px;
 
-  @media (min-width: $breakpoint-medium) {
-    padding: 0;
+    @media (min-width: $breakpoint-medium) {
+      padding: 0;
+    }
   }
 }
+
 
 .page-footer__social-list {
   @include clear-list;
