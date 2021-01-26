@@ -106,6 +106,7 @@
   border: none;
   margin: 0;
   padding: 0;
+  margin-bottom: 25px;
 
   @media (min-width: $breakpoint-medium) {
     margin-bottom: 68px;
@@ -144,8 +145,9 @@
 }
 
 .order__more-title {
-  padding: 25px 0 34px 0;
+
   width: 100%;
+  margin-bottom: 34px;
 
   @media (min-width: $breakpoint-medium) {
     padding: 0;

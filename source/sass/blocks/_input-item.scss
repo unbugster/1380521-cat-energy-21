@@ -42,13 +42,31 @@
 
 .input-item__text {
   flex-shrink: 0;
-  margin-right: 11px;
+  margin-right: 13px;
 
   @media (min-width: $breakpoint-medium) {
     @include font(20px, 30px);
     margin-right: 17px;
   }
 }
+
+
+.input-item__text-email {
+  margin-right: 10px;
+
+  @media (min-width: $breakpoint-medium) {
+    margin-right: 17px;
+  }
+}
+
+.input-item__text-phone {
+  margin-right: 10px;
+
+  @media (min-width: $breakpoint-medium) {
+    margin-right: 17px;
+  }
+}
+
 
 .input-item__input {
   @include font(16px, 18px);
