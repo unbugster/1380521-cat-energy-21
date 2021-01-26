@@ -72,6 +72,14 @@
     padding-top: 0;
     padding-bottom: 0;
   }
+
+  h2 span {
+    padding-right: 15px;
+
+    @media (min-width: $breakpoint-medium) {
+      padding-right: 40px;
+    }
+  }
 }
 
 .order__owner {
@@ -134,7 +142,6 @@
   padding: 0;
   border: none;
 
-
   @media (min-width: $breakpoint-medium) {
     margin-bottom: 40px;
   }
@@ -145,7 +152,6 @@
 }
 
 .order__more-title {
-
   width: 100%;
   margin-bottom: 34px;
 
@@ -221,7 +227,6 @@
 }
 
 .order__button {
-
   padding-bottom: 10px;
 
   @media (min-width: $breakpoint-medium) {

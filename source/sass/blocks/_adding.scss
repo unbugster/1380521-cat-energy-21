@@ -32,13 +32,7 @@
 
 .adding__item {
   @media (min-width: $breakpoint-medium) {
-    padding-left: 41px;
-    padding-right: 38px;
-
-    padding-top: 25px;
-    padding-bottom: 27px;
-
-
+    padding: 25px 38px 27px 41px;
     border: 1px solid $color-very-light-gray;
     border-bottom: none;
 

@@ -14,18 +14,15 @@
   @include font(16px, 18px);
   text-transform: uppercase;
   font-weight: 400;
+  max-width: 140px;
 
   @media (min-width: $breakpoint-medium) {
     @include font(20px, 25px);
+    max-width: 171px;
   }
 
-  span {
-    position: relative;
-    top: 4px;
-
-    @media (min-width: $breakpoint-medium) {
-      top: 0;
-    }
+  @media (min-width: $breakpoint-large) {
+    max-width: 163px;
   }
 }
 

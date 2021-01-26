@@ -19,10 +19,7 @@
   @media (min-width: $breakpoint-medium) {
     margin-bottom: 30px;
     position: relative;
-    padding-top: 78px;
-    padding-right: 278px;
-    padding-left: 52px;
-    padding-bottom: 57px;
+    padding: 78px 278px 57px 52px;
   }
 
   @media (min-width: $breakpoint-large) {
