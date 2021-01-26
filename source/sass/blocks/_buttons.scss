@@ -1,5 +1,6 @@
 .button {
   @include font(16px, 20px);
+  font-family: $font-oswald;
   text-transform: uppercase;
   display: block;
   text-align: center;
@@ -8,12 +9,30 @@
   color: $color-white;
   background-color: $color-green;
   padding-top: 10px;
-  padding-bottom: 10px;
+  padding-bottom: 12px;
   border: none;
 
+  @media (min-width: $breakpoint-medium) {
+    padding-top: 17px;
+    padding-bottom: 17px;
+  }
+
+  &:hover {
+    background-color: $color-limeade;
+  }
+
+  &:active {
+    span {
+      opacity: 0.3;
+    }
+  }
+
   &--gray {
-    padding: 20px 0 20px 0;
     background-color: $color-light-gray;
     color: $color-dark-gray;
+
+    &:hover {
+      background-color: $color-special-gray2;
+    }
   }
 }

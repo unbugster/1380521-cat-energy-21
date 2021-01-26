@@ -1,3 +1,64 @@
 .social {
-  padding: 20px 0 20px 0;
+  padding-left: 53px;
+  padding-right: 57px;
+  padding-top: 5px;
+
+  @media (min-width: $breakpoint-medium) {
+    padding: 0;
+    margin-left: 25px;
+  }
+}
+
+.social__link {
+  display: block;
+
+  &:hover {
+    path {
+      fill: $color-green;
+    }
+  }
+
+  &:active {
+    path {
+      opacity: 0.3;
+    }
+  }
+
+  &--vk {
+    @media (min-width: $breakpoint-medium) {
+      svg {
+        width: 30px;
+        height: 22px;
+      }
+    }
+  }
+
+  &--inst {
+    @media (min-width: $breakpoint-medium) {
+      svg {
+        margin-left: 6px;
+        width: 23px;
+        height: 23px;
+      }
+    }
+  }
+
+  &--fb {
+    &:hover {
+      path {
+        fill: none;
+        stroke: $color-green;
+      }
+    }
+
+    svg {
+      width: 22px;
+      height: 22px;
+
+      @media (min-width: $breakpoint-medium) {
+        width: 28px;
+        height: 33px;
+      }
+    }
+  }
 }

@@ -1,10 +1,28 @@
+.contacts {
+  background-color: $color-light-gray;
+
+  @media (min-width: $breakpoint-large) {
+    background-color: $color-white;
+  }
+
+  &--bg-white {
+    background-color: $color-white;
+  }
+}
+
 .contacts__text {
   @include font(16px, 18px);
   text-transform: uppercase;
   font-weight: 400;
+  max-width: 140px;
 
   @media (min-width: $breakpoint-medium) {
-    @include font(20px, 21px);
+    @include font(20px, 25px);
+    max-width: 171px;
+  }
+
+  @media (min-width: $breakpoint-large) {
+    max-width: 163px;
   }
 }
 
@@ -21,7 +39,7 @@
 
     @media (min-width: $breakpoint-medium) {
       &:first-child {
-        margin-bottom: 28px;
+        margin-bottom: 18px;
       }
     }
   }
@@ -29,7 +47,13 @@
   @media (min-width: $breakpoint-medium) {
     @include font(16px, 20px);
     text-align: right;
-    width: 150px;
+    flex-basis: 31%;
+  }
+
+  @media (min-width: $breakpoint-large) {
+    flex-basis: 50%;
+    text-align: left;
+    padding-left: 47px;
   }
 }
 
@@ -38,14 +62,18 @@
   justify-content: space-between;
   padding: 28px 0 22px 0;
 
+  @media (min-width: $breakpoint-medium) {
+    padding-top: 25px;
+  }
+
   @media (min-width: $breakpoint-large) {
     position: absolute;
     width: 570px;
     background-color: $color-white;
     top: 95px;
     z-index: 2;
-    padding-left: 76px;
-    padding-right: 89px;
+    padding: 63px 89px 56px 76px;
+    left: 110px;
   }
 }
 
@@ -56,10 +84,20 @@
 .contacts__map-iframe {
   width: 100%;
   border: none;
+
+  @media (min-width: $breakpoint-medium) {
+    height: 400px;
+  }
 }
 
 .contacts__container {
-  @media (min-width: $breakpoint-large) {
+  @media (min-width: $breakpoint-medium) {
     position: relative;
+    padding: 40px 70px 35px 70px;
+  }
+
+  @media (min-width: $breakpoint-large) {
+    position: absolute;
+    padding: 0;
   }
 }

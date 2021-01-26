@@ -1,9 +1,10 @@
 .container {
   margin: 0 auto;
-  width: 280px;
+  width: 320px;
+  padding: 0 20px;
 
   @media (min-width: $breakpoint-medium) {
-    width: 708px;
+    width: 768px;
     padding: 0 30px;
   }
 

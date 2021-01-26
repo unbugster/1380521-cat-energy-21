@@ -1,5 +1,17 @@
 .comment {
   display: flex;
+  height: 150px;
+
+  @media (min-width: $breakpoint-medium) {
+    padding-left: 40px;
+    padding-right: 35px;
+    height: 174px;
+  }
+
+  @media (min-width: $breakpoint-large) {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 .comment__textarea {
@@ -9,9 +21,16 @@
   text-transform: uppercase;
   font-family: inherit;
   text-align: center;
+  border: 1px solid $color-platinum;
+
+  padding-top: 10px;
+  padding-bottom: 1px;
 
   @media (min-width: $breakpoint-medium) {
+    @include font(20px, 30px);
     padding: 10px 0 0 18px;
     text-align: left;
+    padding-bottom: 5px;
+    padding-right: 5px;
   }
 }

@@ -1,0 +1,40 @@
+.range-filter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 44px;
+  padding-right: 39px;
+
+  @media (min-width: $breakpoint-medium) {
+    padding-left: 69px;
+    padding-right: 68px;
+  }
+
+  @media (min-width: $breakpoint-large) {
+    padding-left: 137px;
+    padding-right: 0;
+  }
+}
+
+.range-filter__button {
+  @include font(16px, 20px);
+  padding: 0;
+  text-transform: uppercase;
+  font-family: $font-oswald;
+  border: none;
+  background-color: inherit;
+  border-bottom: 1px solid transparent;
+
+  @media (min-width: $breakpoint-medium) {
+    @include font(20px, 30px);
+    border-bottom: 1px dotted $color-very-light-gray;
+  }
+
+  &:hover {
+    border-bottom: 1px solid $color-dark-gray;
+  }
+
+  &:active {
+    border-bottom: 1px solid transparent;
+  }
+}

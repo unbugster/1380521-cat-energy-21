@@ -1,11 +1,29 @@
 .tehnology {
-  padding-bottom: 42px;
+  padding-bottom: 22px;
+
+  @media (min-width: $breakpoint-medium) {
+    border-bottom: 1px solid $color-whisper;
+    padding-bottom: 10px;
+  }
+
+  @media (min-width: $breakpoint-large) {
+    border-bottom: none;
+    padding-bottom: 22px;
+  }
 }
 
 .tehnology__title {
-  margin-bottom: 38px;
-}
+  margin-bottom: 39px;
 
+  @media (min-width: $breakpoint-medium) {
+    padding-top: 17px;
+    margin-bottom: 32px;
+  }
+
+  @media (min-width: $breakpoint-large) {
+    padding-top: 0;
+  }
+}
 
 .tehnology__list {
   @include clear-list;
@@ -13,6 +31,7 @@
   @media (min-width: $breakpoint-medium) {
     display: flex;
     flex-wrap: wrap;
+    counter-reset: list-counter;
   }
 
   @media (min-width: $breakpoint-large) {
@@ -26,20 +45,34 @@
   position: relative;
   display: flex;
   padding-right: 5px;
-  align-items: center;
-
-  &:not(:last-child) {
-    margin-bottom: 20px;
-  }
+  counter-increment: list-counter;
 
   @media (min-width: $breakpoint-medium) {
     @include font(16px, 24px);
     padding-top: 40px;
     width: 250px;
     display: block;
+    padding-bottom: 57px;
+    margin-bottom: 36px;
 
     &:not(:nth-child(2n)) {
       margin-right: 133px;
+    }
+
+    &::after {
+      position: absolute;
+      font-family: $font-oswald;
+      height: 280px;
+      right: 0;
+      top: 0;
+      z-index: -1;
+      content: ""counter(list-counter);
+
+      font-weight: 400;
+      font-size: 280px;
+      line-height: 280px;
+      text-align: center;
+      color: $color-light-gray;
     }
   }
 
@@ -59,9 +92,12 @@
     background-position: center;
     flex-shrink: 0;
     margin-right: 20px;
+    margin-bottom: 20px;
 
     @media (min-width: $breakpoint-medium) {
-      margin-bottom: 20px;
+      margin-bottom: 31px;
+      width: 80px;
+      height: 80px;
     }
   }
 
@@ -69,11 +105,27 @@
     &::before {
       background-image: url("../img/icon-leaf-profit.svg");
     }
+
+    &::after {
+      width: 150px;
+
+      @media (min-width: $breakpoint-large) {
+        right: 0;
+      }
+    }
   }
 
   &--simple {
     &::before {
       background-image: url("../img/icon-tub-simple.svg");
+    }
+
+    &::after {
+      width: 134px;
+
+      @media (min-width: $breakpoint-large) {
+        right: 3px;
+      }
     }
   }
 
@@ -81,11 +133,27 @@
     &::before {
       background-image: url("../img/icon-eat-replace.svg");
     }
+
+    &::after {
+      width: 134px;
+
+      @media (min-width: $breakpoint-large) {
+        right: 0;
+      }
+    }
   }
 
   &--result {
     &::before {
       background-image: url("../img/icon-alarm-result.svg");
+    }
+
+    &::after {
+      width: 134px;
+
+      @media (min-width: $breakpoint-large) {
+        right: -2px;
+      }
     }
   }
 }

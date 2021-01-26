@@ -13,17 +13,34 @@
     margin: 0 auto;
     width: 708px;
     align-items: center;
+    padding-top: 25px;
   }
 
   @media (min-width: $breakpoint-large) {
-    width: 1300px;
+    width: 1220px;
+    padding-top: 54px;
   }
 }
 
 .main-nav__logo {
   display: none;
+  cursor: pointer;
 
   @media (min-width: $breakpoint-medium) {
     display: flex;
+  }
+
+  @media (min-width: $breakpoint-large) {
+    img {
+      width: 202px;
+    }
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
   }
 }

@@ -8,42 +8,61 @@
   width: 100%;
   margin-bottom: 12px;
 
-  @media (min-width: $breakpoint-large) {
+  @media (min-width: $breakpoint-medium) {
     margin-bottom: 20px;
   }
 
+  @media (min-width: $breakpoint-large) {
+    margin-bottom: 20px;
+    flex-basis: 569px;
+  }
 
-  &--email {
-    &::after {
-      content: "";
-      position: absolute;
-      right: 15px;
-      width: 20px;
-      height: 14px;
-      background: url("../img/icon-email.svg") no-repeat right;
-      padding-right: 30px;
+  &--email svg {
+    position: absolute;
+    right: 15px;
+    width: 20px;
+    height: 14px;
+
+    @media (min-width: $breakpoint-medium) {
+      right: 18px;
     }
   }
 
-  &--phone {
-    &::after {
-      content: "";
-      position: absolute;
-      right: 13px;
-      width: 20px;
-      height: 20px;
-      background: url("../img/icon-phone.svg") no-repeat right;
-      padding-right: 30px;
+  &--phone svg {
+    position: absolute;
+    right: 13px;
+    width: 20px;
+    height: 20px;
+
+    @media (min-width: $breakpoint-medium) {
+      right: 18px;
     }
   }
 }
 
 .input-item__text {
   flex-shrink: 0;
-  margin-right: 14px;
+  margin-right: 13px;
 
   @media (min-width: $breakpoint-medium) {
     @include font(20px, 30px);
+    margin-right: 17px;
+  }
+}
+
+.input-item__text-email {
+  margin-right: 10px;
+
+  @media (min-width: $breakpoint-medium) {
+    margin-right: 17px;
+  }
+}
+
+.input-item__text-phone {
+  margin-right: 10px;
+
+  @media (min-width: $breakpoint-medium) {
+    margin-right: 17px;
   }
 }
 
@@ -52,10 +71,30 @@
   width: 100%;
   text-transform: uppercase;
   font-family: inherit;
-  padding: 13px 0 14px 14px;
+  padding: 13px 0 14px 16px;
   border: 1px solid $color-platinum;
+
+  &:hover {
+    border: 1px solid $color-very-light-gray;
+  }
+
+  &:focus {
+    border: 1px solid $color-dark-gray;
+    outline: 1px solid $color-dark-gray;
+  }
+
+  &:disabled {
+    +svg path {
+      stroke: $color-green;
+    }
+
+    +svg g {
+      fill: $color-green;
+    }
+  }
 
   @media (min-width: $breakpoint-medium) {
     @include font(20px, 30px);
+    padding: 10px 0 10px 19px;
   }
 }
