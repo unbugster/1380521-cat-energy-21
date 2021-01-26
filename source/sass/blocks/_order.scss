@@ -68,7 +68,7 @@
   width: 100%;
 
   @media (min-width: $breakpoint-medium) {
-    margin-bottom: 72px;
+    margin-bottom: 75px;
     padding-top: 0;
     padding-bottom: 0;
   }
@@ -84,7 +84,7 @@
   }
 
   @media (min-width: $breakpoint-medium) {
-    margin-bottom: 45px;
+    margin-bottom: 48px;
   }
 }
 
@@ -108,11 +108,11 @@
   padding: 0;
 
   @media (min-width: $breakpoint-medium) {
-    margin-bottom: 65px;
+    margin-bottom: 68px;
   }
 
   @media (min-width: $breakpoint-large) {
-    margin-bottom: 68px;
+    margin-bottom: 70px;
   }
 }
 
@@ -144,12 +144,12 @@
 }
 
 .order__more-title {
-  padding: 22px 0 34px 0;
+  padding: 25px 0 34px 0;
   width: 100%;
 
   @media (min-width: $breakpoint-medium) {
     padding: 0;
-    margin-bottom: 53px;
+    margin-bottom: 56px;
   }
 }
 

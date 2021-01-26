@@ -1,6 +1,6 @@
 .social {
   padding-left: 53px;
-  padding-right: 61px;
+  padding-right: 57px;
   padding-top: 5px;
 
   @media (min-width: $breakpoint-medium) {
@@ -51,14 +51,13 @@
       }
     }
 
-    @media (min-width: $breakpoint-medium) {
-      svg {
+    svg {
+      width: 22px;
+      height: 22px;
+
+      @media (min-width: $breakpoint-medium) {
         width: 28px;
         height: 33px;
-
-        path {
-          stroke-width: 0.8;
-        }
       }
     }
   }
