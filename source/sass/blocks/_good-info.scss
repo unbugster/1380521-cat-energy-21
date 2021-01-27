@@ -28,4 +28,8 @@
     border-bottom: 1px solid $color-very-light-gray;
     padding-bottom: 8px;
   }
+
+  @media (min-width: $breakpoint-large) {
+    padding-right: 5px;
+  }
 }
