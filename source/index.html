@@ -5,6 +5,8 @@
   <meta charset="utf-8">
   <title>Cat Energy - Главная</title>
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/oswaldregular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/oswaldmedium.woff2" as="font" crossorigin="anonymous">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
@@ -56,6 +58,12 @@
 
         <div class="promo__img-wrapper">
           <picture>
+            <source type="image/webp" media="(min-width: 1440px)"
+              srcset="img/cat-e-promo-lg.webp 1x, img/cat-e-promo-lg.webp 2x">
+            <source type="image/webp" media="(min-width: 767px)"
+              srcset="img/cat-e-promo-md.webp 1x, img/cat-e-promo-md.webp 2x">
+            <source type="image/webp" srcset="img/cat-e-promo.webp 1x, img/cat-e-promo2x.webp 2x">
+
             <source media="(min-width: 1440px)" srcset="img/cat-e-promo-lg.png 1x, img/cat-e-promo-lg.png 2x">
             <source media="(min-width: 767px)" srcset="img/cat-e-promo-md.png 1x, img/cat-e-promo-md.png 2x">
             <img class="promo__img" src="img/cat-e-promo.png" srcset="img/cat-e-promo2x.png 2x"
@@ -154,6 +162,10 @@
               <div class="slider__list">
                 <div class="slider__item slider__item--before">
                   <picture>
+                    <source type="image/webp" media="(min-width: 767px)"
+                      srcset="img/cat-before-md.webp 1x, img/cat-before-md2x.webp 2x">
+                    <source type="image/webp" srcset="img/cat-before.webp 1x, img/cat-before2x.webp 2x">
+
                     <source media="(min-width: 767px)" srcset="img/cat-before-md.png 1x, img/cat-before-md2x.png 2x">
                     <img src="img/cat-before.png" srcset="img/cat-before2x.png 2x" width="311" height="232"
                       alt="Как выглядел кот Борис на обычном корме">
@@ -161,6 +173,11 @@
                 </div>
                 <div class="slider__item slider__item--after">
                   <picture>
+                    <source type="image/webp" media="(min-width: 767px)"
+                      srcset="img/cat-after-md.webp 1x, img/cat-after-md2x.webp 2x">
+                    <source type="image/webp" srcset="img/cat-after.webp 1x, img/cat-after2x.webp 2x">
+
+
                     <source media="(min-width: 767px)" srcset="img/cat-after-md.png 1x, img/cat-after-md2x.png 2x">
                     <img src="img/cat-after.png" srcset="img/cat-after2x.png 2x" width="311" height="232"
                       alt="Как выглядит кот Борис на корме Cat Energy">

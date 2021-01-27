@@ -13,6 +13,7 @@
   display: flex;
   align-items: center;
   position: relative;
+  width: 100%;
 
   @media (min-width: $breakpoint-medium) {
     @include font(20px, 30px);
@@ -36,6 +37,11 @@
 }
 
 .choice__input {
+  &:focus + .choice__text {
+    outline: none;
+    box-shadow: 0 0 2px 2px $color-light-gray;
+  }
+
   &:checked {
     & + .choice__text {
       &::after {
@@ -50,10 +56,10 @@
         margin: auto;
 
         @media (min-width: $breakpoint-medium) {
-          left: 12px;
-          top: 13px;
-          width: 18px;
-          height: 18px;
+          left: 11px;
+          top: 11px;
+          width: 19px;
+          height: 19px;
         }
       }
     }
