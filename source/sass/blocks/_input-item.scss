@@ -70,6 +70,7 @@
 
 .input-item__input {
   @include font(16px, 18px);
+  height: 47px;
   min-width: 0;
   width: calc(100% - 20px);
   text-transform: uppercase;
@@ -98,5 +99,6 @@
   @media (min-width: $breakpoint-medium) {
     @include font(20px, 30px);
     padding: 10px 45px 10px 19px;
+    height: 52px;
   }
 }
