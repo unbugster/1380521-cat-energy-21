@@ -1,18 +1,29 @@
+.slider__list {
+  overflow: hidden;
+
+  @media (min-width: $breakpoint-medium) {
+    position: absolute;
+    overflow: visible;
+    max-width: 768px;
+  }
+}
+
+
 .slider__item {
   &--before {
     @media (min-width: $breakpoint-medium) {
       height: 520px;
-      width: 318px;
+      width: 319px;
       overflow: hidden;
       position: absolute;
-      top: -172px;
+      bottom: 13px;
       transform: translate(36px, 0);
     }
 
     @media (min-width: $breakpoint-large) {
-      top: -191px;
       transform: translate(90px, 0);
       width: 333px;
+      bottom: 35px;
     }
 
     img {
@@ -39,15 +50,17 @@
       width: 292px;
       overflow: hidden;
       position: absolute;
-      top: -172px;
+
       transform: translate(144px, 0);
-      right: 235px;
+
+      bottom: 13px;
+      left: 211px;
     }
 
     @media (min-width: $breakpoint-large) {
-      transform: translate(209px, 0);
-      top: -192px;
+      transform: translate(211px, 0);
       right: 234px;
+      bottom: 35px;
     }
 
     img {
