@@ -52,13 +52,12 @@
     background-color: $color-gray;
     position: relative;
     padding-bottom: 68px;
-    padding-top: 100px;
+    padding-top: 363px;
   }
 
   @media (min-width: $breakpoint-large) {
     z-index: 2;
     position: relative;
-    padding-top: 0;
     background-image: linear-gradient(to right, $color-light-gray 59%, $color-gray 41%);
     padding-bottom: 70px;
   }
