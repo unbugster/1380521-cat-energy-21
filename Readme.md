@@ -1,4 +1,4 @@
-# Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
+# Личный проект «Кэт энерджи»
 
 * Студент: [Andrew Bagaev](https://up.htmlacademy.ru/adaptive/21/user/1380521).
 * Наставник: `Сергей Зубов`.
